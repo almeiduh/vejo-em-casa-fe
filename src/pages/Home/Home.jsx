@@ -1,8 +1,8 @@
-import React from "react";
+import React from 'react';
 
-import Sidebar from "components/Sidebar/Sidebar";
+import Sidebar from 'components/Sidebar/Sidebar';
 
-const Home = props => {
+const Home = (props) => {
   return (
     <div className="vec-flex">
       <Sidebar />
