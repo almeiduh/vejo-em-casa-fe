@@ -1,0 +1,98 @@
+{
+  "extends": [
+    "airbnb",
+    "prettier",
+    "prettier/react",
+    "plugin:sonarjs/recommended"
+  ],
+  "plugins": ["prettier", "react-hooks", "import-helpers", "fp", "sonarjs"],
+  "rules": {
+    "no-undefined": 1,
+    "max-depth": [2, 2],
+    "no-unneeded-ternary": 2,
+    "padding-line-between-statements": [
+      2,
+      {
+        "blankLine": "always",
+        "prev": "multiline-block-like",
+        "next": "*"
+      }
+    ],
+    "no-undef": 0,
+    "no-console": 2,
+    "import/no-unresolved": 0,
+    "react/boolean-prop-naming": [
+      1,
+      { "rule": "^(is|has|can)[A-Z]([A-Za-z0-9]?)+" }
+    ],
+    "react/jsx-filename-extension": [2, { "extensions": [".js", ".jsx"] }],
+    "import/prefer-default-export": 0,
+    "no-use-before-define": [2, { "functions": false, "classes": true }],
+    "newline-before-return": 2,
+    "newline-after-var": 2,
+    "jsx-a11y/anchor-is-valid": 0,
+    "react-hooks/rules-of-hooks": 2,
+    "react-hooks/exhaustive-deps": 1,
+    "react/jsx-props-no-spreading": 0,
+    "react/jsx-sort-props": [
+      2,
+      {
+        "reservedFirst": true,
+        "callbacksLast": true,
+        "shorthandFirst": true
+      }
+    ],
+    "import/no-extraneous-dependencies": [2, { "devDependencies": true }],
+    "import-helpers/order-imports": [
+      2,
+      {
+        "newlinesBetween": "always", // new line between groups
+        "groups": [
+          "/^react/",
+          "/^utils/",
+          "module",
+          "/^cobalt/",
+          "/^components/",
+          "/^context/",
+          "/^hooks/",
+          "/^styles/",
+          "/^__fixtures__/",
+          ["parent", "sibling", "index"]
+        ],
+        "alphabetize": { "order": "asc", "ignoreCase": true }
+      }
+    ],
+    "sonarjs/cognitive-complexity": 1,
+    "fp/no-arguments": 2,
+    "fp/no-get-set": 2,
+    "fp/no-loops": 1,
+    "fp/no-mutating-assign": 2,
+    "fp/no-mutating-methods": 1,
+    "fp/no-mutation": [
+      1,
+      {
+        "exceptions": [
+          { "property": "propTypes" },
+          { "property": "defaultProps" },
+          { "object": "errors" }
+        ]
+      }
+    ],
+    "fp/no-rest-parameters": 1,
+    "fp/no-this": 1,
+    "fp/no-valueof-field": 2
+  },
+  "overrides": [
+    {
+      "files": ["src/**/__tests__/*", "src/__fixtures__/*"],
+      "rules": {
+        "react/prop-types": 0,
+        "sonarjs/no-identical-functions": 0,
+        "sonarjs/no-duplicate-string": 0,
+        "fp/no-this": 0,
+        "fp/no-mutation": 0,
+        "fp/no-mutating-methods": 0
+      }
+    }
+  ]
+}
