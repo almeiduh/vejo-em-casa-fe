@@ -1,21 +1,26 @@
-import React from "react";
-import ReactDOM from "react-dom";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux';
+import { BrowserRouter as Router } from 'react-router-dom';
 
-import Header from "components/Header/Header";
+import store from 'state/store';
 
-import "styles/tailwind.css";
-import { BrowserRouter as Router } from "react-router-dom";
+import Header from 'components/Header/Header';
 
-import App from "./App";
+import 'styles/tailwind.css';
+
+import App from './App';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <Router>
-      <>
-        <Header />
-        <App />
-      </>
-    </Router>
-  </React.StrictMode>,
-  document.getElementById("root")
+  <Provider store={store}>
+    <React.StrictMode>
+      <Router>
+        <>
+          <Header />
+          <App />
+        </>
+      </Router>
+    </React.StrictMode>
+  </Provider>,
+  document.getElementById('root')
 );

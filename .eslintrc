@@ -74,7 +74,8 @@
         "exceptions": [
           { "property": "propTypes" },
           { "property": "defaultProps" },
-          { "object": "errors" }
+          { "object": "errors" },
+          { "object": "state" }
         ]
       }
     ],
