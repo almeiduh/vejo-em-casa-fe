@@ -2,10 +2,7 @@ import React from 'react';
 
 const Header = (props) => (
   <nav className="vec-w-screen vec-h-20 vec-px-12 vec-py-4 vec-bg-white vec-flex vec-items-center vec-shadow vec-justify-between">
-    <div
-      className="vec-flex vec-items-center"
-      style={{ fontFamily: 'Rubik, sans-serif' }}
-    >
+    <div className="vec-flex vec-items-center">
       <Logo />
       <Category name="Agenda" />
       <Category name="Categorias" />
@@ -28,13 +25,12 @@ const Category = ({ name, links }) => (
     {links && links.length > 0 && (
       <svg
         className="vec-ml-1 vec-w-4 vec-fill-current vec-text-gray-500"
-        xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 20 20"
+        xmlns="http://www.w3.org/2000/svg"
       >
         <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
       </svg>
     )}
-
   </div>
 );
 
