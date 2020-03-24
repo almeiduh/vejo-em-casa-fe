@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-
 import {
   getCreatorDetail,
   getCreatorDetailAsync,
@@ -11,8 +10,8 @@ import {
   getEventDetail,
   getEvents,
 } from 'state/events/eventsSlice';
-
 import Sidebar from 'components/Sidebar/Sidebar';
+import TodaysEvents from 'components/TodaysEvents/TodaysEvents';
 
 const Home = (props) => {
   const dispatch = useDispatch();
@@ -31,7 +30,8 @@ const Home = (props) => {
   return (
     <div className="vec-flex">
       <Sidebar />
-      <div className="vec-block">
+      <div className="vec-block vec-px-4">
+        <TodaysEvents />
         <div>
           {' '}
           <b> events:</b>
