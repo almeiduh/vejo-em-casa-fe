@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
+
 import {
   getCreatorDetail,
   getCreatorDetailAsync,
@@ -10,6 +11,7 @@ import {
   getEventDetail,
   getEvents,
 } from 'state/events/eventsSlice';
+
 import Sidebar from 'components/Sidebar/Sidebar';
 import TodaysEvents from 'components/TodaysEvents/TodaysEvents';
 

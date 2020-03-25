@@ -5,6 +5,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 
 import store from 'state/store';
 
+import Footer from 'components/Footer/Footer';
 import Header from 'components/Header/Header';
 
 import 'styles/tailwind.css';
@@ -18,6 +19,7 @@ ReactDOM.render(
         <>
           <Header />
           <App />
+          <Footer />
         </>
       </Router>
     </React.StrictMode>

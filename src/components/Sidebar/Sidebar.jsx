@@ -6,6 +6,9 @@ import {
   getCategories,
 } from 'state/categories/categoriesSlice';
 
+import noteSvg from '../../svg/veja_web_icons-03.svg';
+import timerSvg from '../../svg/veja_web_icons-04.svg';
+
 const Sidebar = () => {
   const dispatch = useDispatch();
   const categories = useSelector(getCategories);
@@ -21,18 +24,18 @@ const Sidebar = () => {
 
   return (
     <div
-      className="vec-items-center vec-w-full vec-justify-between vec-p-12 vec-bg-gray vec-max-h-screen"
+      className="vec-items-center vec-w-1/3 vec-justify-between vec-p-12 vec-bg-gray vec-max-h-screen"
       style={{ backgroundColor: '#F5F5F5' }}
     >
       <Title name="Agenda" />
       <hr style={hrStyle} />
       <div className="vec-my-8">
         <div className="vec-flex vec-items-center">
-          <SvgRect />
+          <SvgTimer />
           <SubTitle subTitle="Hoje" />
         </div>
         <div className="vec-flex vec-items-center">
-          <SvgRect />
+          <SvgTimer />
           <SubTitle subTitle="Amanhã" />
         </div>
       </div>
@@ -48,7 +51,7 @@ const Sidebar = () => {
       <div className="vec-my-8">
         {(categories || []).map((cat) => (
           <div key={cat.id} className="vec-flex vec-items-center">
-            <SvgRect />
+            <SvgNote />
             <SubTitle subTitle={cat.name} />
           </div>
         ))}
@@ -75,11 +78,15 @@ const SubTitle = ({ subTitle }) => (
   <p className="vec-font-light vec-text-sm">{subTitle}</p>
 );
 
-const SvgRect = () => (
+const SvgTimer = () => (
   <div className="vec-mx-2 vec-my-4">
-    <svg height="10" width="10">
-      <rect height="10" style={{ fill: 'rgb(0,0,0)' }} width="100" />
-    </svg>
+    <img alt="" className="vec-w-4" src={timerSvg}/>
+  </div>
+);
+
+const SvgNote = () => (
+  <div className="vec-mx-2 vec-my-4">
+    <img alt="" className="vec-w-4" src={noteSvg}/>
   </div>
 );
 
