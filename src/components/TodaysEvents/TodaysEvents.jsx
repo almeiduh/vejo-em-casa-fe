@@ -1,4 +1,5 @@
 import React from 'react';
+
 import EventDetail from '../EventDetail/EventDetail';
 
 const mockedEvents = [
@@ -99,6 +100,7 @@ const TodaysEvents = () => {
 
 const EventDetailContainer = ({ event, index }) => {
   const classes = `vec-w-1/4 vec-mb-10 ${index % 4 !== 3 ? 'vec-pr-5' : ''}`;
+  
   return (
     <div className={classes}>
       <EventDetail event={event} />
