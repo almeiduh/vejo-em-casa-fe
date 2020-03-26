@@ -1,4 +1,6 @@
 import React, { useEffect } from 'react';
+import AwesomeSlider from 'react-awesome-slider';
+import AwesomeSliderStyles from 'react-awesome-slider/src/styles';
 import { useSelector, useDispatch } from 'react-redux';
 
 import {
@@ -14,6 +16,14 @@ import {
 
 import Sidebar from 'components/Sidebar/Sidebar';
 import TodaysEvents from 'components/TodaysEvents/TodaysEvents';
+
+const slider = (
+  <AwesomeSlider cssModule={AwesomeSliderStyles} organicArrows={false}>
+    <div data-src="https://vcguesthouse.eu/media/k2/items/cache/feb4274796d93ff716e9650163a77fb8_XL.jpg" />
+    <div data-src="https://quidgest.com/wp-content/uploads/2019/11/topo-destaque-2.jpg" />
+    <div data-src="https://quidgest.com/wp-content/uploads/2019/08/qday-backdrop-quidgest.jpg" />
+  </AwesomeSlider>
+);
 
 const Home = (props) => {
   const dispatch = useDispatch();
@@ -33,6 +43,7 @@ const Home = (props) => {
     <div className="vec-flex">
       <Sidebar />
       <div className="vec-block vec-px-4">
+        <div>{slider}</div>
         <TodaysEvents />
         <div>
           {' '}
