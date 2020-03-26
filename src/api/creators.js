@@ -8,6 +8,13 @@ const getCreator = async (creatorId) => {
   return data;
 };
 
+const getAllCreators = async () => {
+  const { data } = await httpClient.get(baseUrl);
+
+  return data;
+};
+
 export default {
   getCreator,
+  getAllCreators,
 };

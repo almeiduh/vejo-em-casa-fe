@@ -59,7 +59,7 @@ export const getAllEventsAsync = (categoryId, creatorId) => async (
 ) => {
   try {
     dispatch(getAllEventsStart());
-    const events = await apiEvents.getAllEvents(categoryId, creatorId);
+    const events = await apiEvents.getAllEvents({ categoryId, creatorId });
 
     dispatch(getAllEventsSuccess(events));
   } catch (err) {

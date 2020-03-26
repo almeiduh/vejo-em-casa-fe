@@ -2,12 +2,24 @@ import { httpClient } from 'config';
 
 const baseUrl = '/events';
 
-const getAllEvents = async (categoryId = '', creatorId = '') => {
-  const url = `${baseUrl}?categoryId=${categoryId}&creatorId=${creatorId}`;
+const getAllEvents = async ({
+  categoryId,
+  creatorId,
+  page = 0,
+  pageSize = 10,
+}) => {
+  const {
+    data: { content },
+  } = await httpClient.get(baseUrl, {
+    params: {
+      categoryId,
+      creatorId,
+      page,
+      pageSize,
+    },
+  });
 
-  const { data } = await httpClient.get(url);
-
-  return data;
+  return content;
 };
 
 const getEvent = async (eventId) => {
