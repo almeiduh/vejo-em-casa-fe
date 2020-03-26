@@ -1,6 +1,6 @@
 import { httpClient } from 'config';
 
-const baseUrl = '/categories';
+const baseUrl = '/category';
 
 const getAllCategories = async () => {
   const { data } = await httpClient.get(baseUrl);
@@ -8,6 +8,13 @@ const getAllCategories = async () => {
   return data;
 };
 
+const getCategory = async (categoryId) => {
+  const { data } = await httpClient.get(`${baseUrl}/${categoryId}`);
+
+  return data;
+};
+
 export default {
   getAllCategories,
+  getCategory,
 };
