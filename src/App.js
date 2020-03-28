@@ -1,12 +1,12 @@
-import React from "react";
-import { Route, Switch } from "react-router-dom";
+import React from 'react';
+import { Route, Switch } from 'react-router-dom';
 
-import Home from "pages/Home/Home";
+import Landing from 'pages/Landing/Landing';
 
 function App() {
   return (
     <Switch>
-      <Route exact component={Home} path="/" />
+      <Route exact component={Landing} path="/" />
     </Switch>
   );
 }
