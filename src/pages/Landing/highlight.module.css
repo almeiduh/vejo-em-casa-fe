@@ -9,17 +9,6 @@
   object-fit: cover;
 }
 
-.overlay {
-  background: #eb2907e6 0% 0% no-repeat padding-box;
-  mix-blend-mode: multiply;
-  opacity: 1;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-
 .rightBtns {
   position: absolute;
   bottom: 20px;
