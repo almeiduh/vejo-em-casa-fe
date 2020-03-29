@@ -1,4 +1,5 @@
 import React from 'react';
+
 import moment from 'moment';
 
 const EventDetail = ({ event }) => (
@@ -27,7 +28,9 @@ const DateTime = ({ time }) => {
   const momentTime = moment(time);
   const date = momentTime.format('DD.MM.YYYY');
   const hour = momentTime.format('HH[H]mm');
-  return (
+
+  
+return (
     <div className="vec-block vec-text-right vec-text-xs">
       <div>{date}</div>
       <div>{hour}</div>
