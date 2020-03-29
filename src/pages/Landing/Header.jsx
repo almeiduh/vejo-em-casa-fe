@@ -13,13 +13,21 @@ const Header = () => {
       </div>
       <div className={styles.menus}>
         <div className={styles.menu}>Sobre nós</div>
-        <div className={styles.menu}>Como funciona</div>
-        <div className={styles.menu}>Missão</div>
+        <div className={styles.menu}>
+          <a href="#comofunciona">Como funciona</a>
+        </div>
+        <div className={styles.menu}>
+          <a href="#missao">Missão</a>
+        </div>
         <div className={styles.menu}>Contactos</div>
-        <div className={styles.menu}>Parcerias</div>
+        <div className={styles.menu}>
+          <a href="#parceiros">Parcerias</a>
+        </div>
         <div className={styles.menu}>
           <PlaneIcon height="18px" width="28px" />
-          <span className="vec-ml-3">Põe-te a par</span>
+          <span className="vec-ml-3">
+            <a href="#poeteapar">Põe-te a par</a>
+          </span>
         </div>
       </div>
     </div>

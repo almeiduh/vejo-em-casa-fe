@@ -7,6 +7,7 @@ import videoWebm from 'assets/videos/Vejo_em_Casa_video_header.webm';
 // import fbSvg from 'svg/veja_web_icons-11.svg';
 import { ReactComponent as FbLogo } from 'svg/veja_web_icons-11.svg';
 import { ReactComponent as InstagramLogo } from 'svg/veja_web_icons-14.svg';
+import { ReactComponent as VejaEmCasa } from 'svg/veja_web_pag_landingpage_Icons-02.svg';
 import { ReactComponent as PlaneIcon } from 'svg/veja_web_pag_landingpage_Icons-03.svg';
 
 import styles from './highlight.module.css';
@@ -15,6 +16,9 @@ const Highlight = () => {
   return (
     <>
       <div className={styles.container}>
+        <div className={styles.logo}>
+          <VejaEmCasa height="auto" width="auto" />
+        </div>
         <video autoPlay loop className={styles.backgroundImg}>
           <source
             src={videoMp4}
@@ -28,14 +32,16 @@ const Highlight = () => {
           />
         </video>
         <div className={styles.rightBtns}>
-          <div className={styles.poeParBtn}>
+          <a className={styles.poeParBtn} href="#poeteapar">
             <PlaneIcon height="26px" width="40px" />
-            <div className="vec-ml-4">Põe-te a par</div>
-          </div>
+            <span className="vec-ml-4">Põe-te a par</span>
+          </a>
           <div className={styles.social}>
             <div className={styles.fb}>
               <FbLogo className={styles.icon} color="white" height="22px" />
-              <div>Facebook</div>
+              <div>
+                <a href="https://www.facebook.com/vejoemcasa/">Facebook</a>
+              </div>
             </div>
             <div className={styles.instagram}>
               <InstagramLogo
@@ -44,7 +50,9 @@ const Highlight = () => {
                 height="22px"
               />
 
-              <div>Instagram</div>
+              <div>
+                <a href="https://www.instagram.com/vejo.em.casa/">Instagram</a>
+              </div>
             </div>
           </div>
         </div>
