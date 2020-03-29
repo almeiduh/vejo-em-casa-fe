@@ -18,3 +18,9 @@
   margin-right: 58px;
   cursor: pointer;
 }
+.menu:last-child {
+  margin-right: 0;
+  display: flex;
+  align-items: center;
+  color: #eb2907;
+}
