@@ -174,7 +174,8 @@ textarea {
  */
 
 button,
-input { /* 1 */
+input {
+  /* 1 */
   overflow: visible;
 }
 
@@ -184,7 +185,8 @@ input { /* 1 */
  */
 
 button,
-select { /* 1 */
+select {
+  /* 1 */
   text-transform: none;
 }
 
@@ -193,9 +195,9 @@ select { /* 1 */
  */
 
 button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
+[type='button'],
+[type='reset'],
+[type='submit'] {
   -webkit-appearance: button;
 }
 
@@ -204,9 +206,9 @@ button,
  */
 
 button::-moz-focus-inner,
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
+[type='button']::-moz-focus-inner,
+[type='reset']::-moz-focus-inner,
+[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
@@ -216,9 +218,9 @@ button::-moz-focus-inner,
  */
 
 button:-moz-focusring,
-[type="button"]:-moz-focusring,
-[type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring {
+[type='button']:-moz-focusring,
+[type='reset']:-moz-focusring,
+[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -267,8 +269,8 @@ textarea {
  * 2. Remove the padding in IE 10.
  */
 
-[type="checkbox"],
-[type="radio"] {
+[type='checkbox'],
+[type='radio'] {
   box-sizing: border-box; /* 1 */
   padding: 0; /* 2 */
 }
@@ -277,8 +279,8 @@ textarea {
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
 
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
+[type='number']::-webkit-inner-spin-button,
+[type='number']::-webkit-outer-spin-button {
   height: auto;
 }
 
@@ -287,7 +289,7 @@ textarea {
  * 2. Correct the outline style in Safari.
  */
 
-[type="search"] {
+[type='search'] {
   -webkit-appearance: textfield; /* 1 */
   outline-offset: -2px; /* 2 */
 }
@@ -296,7 +298,7 @@ textarea {
  * Remove the inner padding in Chrome and Safari on macOS.
  */
 
-[type="search"]::-webkit-search-decoration {
+[type='search']::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
@@ -414,7 +416,9 @@ ul {
  */
 
 html {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* 1 */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; /* 1 */
   line-height: 1.5; /* 2 */
 }
 
@@ -485,7 +489,7 @@ textarea::placeholder {
 }
 
 button,
-[role="button"] {
+[role='button'] {
   cursor: pointer;
 }
 
@@ -542,7 +546,8 @@ pre,
 code,
 kbd,
 samp {
-  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono',
+    'Courier New', monospace;
 }
 
 /**
@@ -654,8 +659,8 @@ video {
 
 .vec-appearance-none {
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .vec-bg-fixed {
@@ -3659,7 +3664,7 @@ video {
 }
 
 .vec-clearfix:after {
-  content: "";
+  content: '';
   display: table;
   clear: both;
 }
@@ -3881,7 +3886,7 @@ video {
 }
 
 .vec-leading-3 {
-  line-height: .75rem;
+  line-height: 0.75rem;
 }
 
 .vec-leading-4 {
@@ -6806,15 +6811,18 @@ video {
 }
 
 .vec-shadow-md {
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 
 .vec-shadow-lg {
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
 .vec-shadow-xl {
-  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 
 .vec-shadow-2xl {
@@ -6846,15 +6854,18 @@ video {
 }
 
 .hover\:vec-shadow-md:hover {
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 
 .hover\:vec-shadow-lg:hover {
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
 .hover\:vec-shadow-xl:hover {
-  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 
 .hover\:vec-shadow-2xl:hover {
@@ -6886,15 +6897,18 @@ video {
 }
 
 .focus\:vec-shadow-md:focus {
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 
 .focus\:vec-shadow-lg:focus {
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
 .focus\:vec-shadow-xl:focus {
-  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 
 .focus\:vec-shadow-2xl:focus {
@@ -8209,22 +8223,22 @@ video {
 
 .vec-select-none {
   -webkit-user-select: none;
-          user-select: none;
+  user-select: none;
 }
 
 .vec-select-text {
   -webkit-user-select: text;
-          user-select: text;
+  user-select: text;
 }
 
 .vec-select-all {
   -webkit-user-select: all;
-          user-select: all;
+  user-select: all;
 }
 
 .vec-select-auto {
   -webkit-user-select: auto;
-          user-select: auto;
+  user-select: auto;
 }
 
 .vec-align-baseline {
@@ -9163,7 +9177,10 @@ video {
   --transform-skew-y: 0;
   --transform-scale-x: 1;
   --transform-scale-y: 1;
-  transform: translateX(var(--transform-translate-x)) translateY(var(--transform-translate-y)) rotate(var(--transform-rotate)) skewX(var(--transform-skew-x)) skewY(var(--transform-skew-y)) scaleX(var(--transform-scale-x)) scaleY(var(--transform-scale-y));
+  transform: translateX(var(--transform-translate-x))
+    translateY(var(--transform-translate-y)) rotate(var(--transform-rotate))
+    skewX(var(--transform-skew-x)) skewY(var(--transform-skew-y))
+    scaleX(var(--transform-scale-x)) scaleY(var(--transform-scale-y));
 }
 
 .vec-transform-none {
@@ -9212,23 +9229,23 @@ video {
 }
 
 .vec-scale-50 {
-  --transform-scale-x: .5;
-  --transform-scale-y: .5;
+  --transform-scale-x: 0.5;
+  --transform-scale-y: 0.5;
 }
 
 .vec-scale-75 {
-  --transform-scale-x: .75;
-  --transform-scale-y: .75;
+  --transform-scale-x: 0.75;
+  --transform-scale-y: 0.75;
 }
 
 .vec-scale-90 {
-  --transform-scale-x: .9;
-  --transform-scale-y: .9;
+  --transform-scale-x: 0.9;
+  --transform-scale-y: 0.9;
 }
 
 .vec-scale-95 {
-  --transform-scale-x: .95;
-  --transform-scale-y: .95;
+  --transform-scale-x: 0.95;
+  --transform-scale-y: 0.95;
 }
 
 .vec-scale-100 {
@@ -9261,19 +9278,19 @@ video {
 }
 
 .vec-scale-x-50 {
-  --transform-scale-x: .5;
+  --transform-scale-x: 0.5;
 }
 
 .vec-scale-x-75 {
-  --transform-scale-x: .75;
+  --transform-scale-x: 0.75;
 }
 
 .vec-scale-x-90 {
-  --transform-scale-x: .9;
+  --transform-scale-x: 0.9;
 }
 
 .vec-scale-x-95 {
-  --transform-scale-x: .95;
+  --transform-scale-x: 0.95;
 }
 
 .vec-scale-x-100 {
@@ -9301,19 +9318,19 @@ video {
 }
 
 .vec-scale-y-50 {
-  --transform-scale-y: .5;
+  --transform-scale-y: 0.5;
 }
 
 .vec-scale-y-75 {
-  --transform-scale-y: .75;
+  --transform-scale-y: 0.75;
 }
 
 .vec-scale-y-90 {
-  --transform-scale-y: .9;
+  --transform-scale-y: 0.9;
 }
 
 .vec-scale-y-95 {
-  --transform-scale-y: .95;
+  --transform-scale-y: 0.95;
 }
 
 .vec-scale-y-100 {
@@ -9342,23 +9359,23 @@ video {
 }
 
 .hover\:vec-scale-50:hover {
-  --transform-scale-x: .5;
-  --transform-scale-y: .5;
+  --transform-scale-x: 0.5;
+  --transform-scale-y: 0.5;
 }
 
 .hover\:vec-scale-75:hover {
-  --transform-scale-x: .75;
-  --transform-scale-y: .75;
+  --transform-scale-x: 0.75;
+  --transform-scale-y: 0.75;
 }
 
 .hover\:vec-scale-90:hover {
-  --transform-scale-x: .9;
-  --transform-scale-y: .9;
+  --transform-scale-x: 0.9;
+  --transform-scale-y: 0.9;
 }
 
 .hover\:vec-scale-95:hover {
-  --transform-scale-x: .95;
-  --transform-scale-y: .95;
+  --transform-scale-x: 0.95;
+  --transform-scale-y: 0.95;
 }
 
 .hover\:vec-scale-100:hover {
@@ -9391,19 +9408,19 @@ video {
 }
 
 .hover\:vec-scale-x-50:hover {
-  --transform-scale-x: .5;
+  --transform-scale-x: 0.5;
 }
 
 .hover\:vec-scale-x-75:hover {
-  --transform-scale-x: .75;
+  --transform-scale-x: 0.75;
 }
 
 .hover\:vec-scale-x-90:hover {
-  --transform-scale-x: .9;
+  --transform-scale-x: 0.9;
 }
 
 .hover\:vec-scale-x-95:hover {
-  --transform-scale-x: .95;
+  --transform-scale-x: 0.95;
 }
 
 .hover\:vec-scale-x-100:hover {
@@ -9431,19 +9448,19 @@ video {
 }
 
 .hover\:vec-scale-y-50:hover {
-  --transform-scale-y: .5;
+  --transform-scale-y: 0.5;
 }
 
 .hover\:vec-scale-y-75:hover {
-  --transform-scale-y: .75;
+  --transform-scale-y: 0.75;
 }
 
 .hover\:vec-scale-y-90:hover {
-  --transform-scale-y: .9;
+  --transform-scale-y: 0.9;
 }
 
 .hover\:vec-scale-y-95:hover {
-  --transform-scale-y: .95;
+  --transform-scale-y: 0.95;
 }
 
 .hover\:vec-scale-y-100:hover {
@@ -9472,23 +9489,23 @@ video {
 }
 
 .focus\:vec-scale-50:focus {
-  --transform-scale-x: .5;
-  --transform-scale-y: .5;
+  --transform-scale-x: 0.5;
+  --transform-scale-y: 0.5;
 }
 
 .focus\:vec-scale-75:focus {
-  --transform-scale-x: .75;
-  --transform-scale-y: .75;
+  --transform-scale-x: 0.75;
+  --transform-scale-y: 0.75;
 }
 
 .focus\:vec-scale-90:focus {
-  --transform-scale-x: .9;
-  --transform-scale-y: .9;
+  --transform-scale-x: 0.9;
+  --transform-scale-y: 0.9;
 }
 
 .focus\:vec-scale-95:focus {
-  --transform-scale-x: .95;
-  --transform-scale-y: .95;
+  --transform-scale-x: 0.95;
+  --transform-scale-y: 0.95;
 }
 
 .focus\:vec-scale-100:focus {
@@ -9521,19 +9538,19 @@ video {
 }
 
 .focus\:vec-scale-x-50:focus {
-  --transform-scale-x: .5;
+  --transform-scale-x: 0.5;
 }
 
 .focus\:vec-scale-x-75:focus {
-  --transform-scale-x: .75;
+  --transform-scale-x: 0.75;
 }
 
 .focus\:vec-scale-x-90:focus {
-  --transform-scale-x: .9;
+  --transform-scale-x: 0.9;
 }
 
 .focus\:vec-scale-x-95:focus {
-  --transform-scale-x: .95;
+  --transform-scale-x: 0.95;
 }
 
 .focus\:vec-scale-x-100:focus {
@@ -9561,19 +9578,19 @@ video {
 }
 
 .focus\:vec-scale-y-50:focus {
-  --transform-scale-y: .5;
+  --transform-scale-y: 0.5;
 }
 
 .focus\:vec-scale-y-75:focus {
-  --transform-scale-y: .75;
+  --transform-scale-y: 0.75;
 }
 
 .focus\:vec-scale-y-90:focus {
-  --transform-scale-y: .9;
+  --transform-scale-y: 0.9;
 }
 
 .focus\:vec-scale-y-95:focus {
-  --transform-scale-y: .95;
+  --transform-scale-y: 0.95;
 }
 
 .focus\:vec-scale-y-100:focus {
@@ -10841,7 +10858,8 @@ video {
 }
 
 .vec-transition {
-  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+  transition-property: background-color, border-color, color, fill, stroke,
+    opacity, box-shadow, transform;
 }
 
 .vec-transition-colors {
@@ -10957,8 +10975,8 @@ video {
 
   .sm\:vec-appearance-none {
     -webkit-appearance: none;
-       -moz-appearance: none;
-            appearance: none;
+    -moz-appearance: none;
+    appearance: none;
   }
 
   .sm\:vec-bg-fixed {
@@ -13962,7 +13980,7 @@ video {
   }
 
   .sm\:vec-clearfix:after {
-    content: "";
+    content: '';
     display: table;
     clear: both;
   }
@@ -14184,7 +14202,7 @@ video {
   }
 
   .sm\:vec-leading-3 {
-    line-height: .75rem;
+    line-height: 0.75rem;
   }
 
   .sm\:vec-leading-4 {
@@ -17109,15 +17127,18 @@ video {
   }
 
   .sm\:vec-shadow-md {
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+      0 2px 4px -1px rgba(0, 0, 0, 0.06);
   }
 
   .sm\:vec-shadow-lg {
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+      0 4px 6px -2px rgba(0, 0, 0, 0.05);
   }
 
   .sm\:vec-shadow-xl {
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+      0 10px 10px -5px rgba(0, 0, 0, 0.04);
   }
 
   .sm\:vec-shadow-2xl {
@@ -17149,15 +17170,18 @@ video {
   }
 
   .sm\:hover\:vec-shadow-md:hover {
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+      0 2px 4px -1px rgba(0, 0, 0, 0.06);
   }
 
   .sm\:hover\:vec-shadow-lg:hover {
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+      0 4px 6px -2px rgba(0, 0, 0, 0.05);
   }
 
   .sm\:hover\:vec-shadow-xl:hover {
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+      0 10px 10px -5px rgba(0, 0, 0, 0.04);
   }
 
   .sm\:hover\:vec-shadow-2xl:hover {
@@ -17189,15 +17213,18 @@ video {
   }
 
   .sm\:focus\:vec-shadow-md:focus {
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+      0 2px 4px -1px rgba(0, 0, 0, 0.06);
   }
 
   .sm\:focus\:vec-shadow-lg:focus {
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+      0 4px 6px -2px rgba(0, 0, 0, 0.05);
   }
 
   .sm\:focus\:vec-shadow-xl:focus {
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+      0 10px 10px -5px rgba(0, 0, 0, 0.04);
   }
 
   .sm\:focus\:vec-shadow-2xl:focus {
@@ -18512,22 +18539,22 @@ video {
 
   .sm\:vec-select-none {
     -webkit-user-select: none;
-            user-select: none;
+    user-select: none;
   }
 
   .sm\:vec-select-text {
     -webkit-user-select: text;
-            user-select: text;
+    user-select: text;
   }
 
   .sm\:vec-select-all {
     -webkit-user-select: all;
-            user-select: all;
+    user-select: all;
   }
 
   .sm\:vec-select-auto {
     -webkit-user-select: auto;
-            user-select: auto;
+    user-select: auto;
   }
 
   .sm\:vec-align-baseline {
@@ -19466,7 +19493,10 @@ video {
     --transform-skew-y: 0;
     --transform-scale-x: 1;
     --transform-scale-y: 1;
-    transform: translateX(var(--transform-translate-x)) translateY(var(--transform-translate-y)) rotate(var(--transform-rotate)) skewX(var(--transform-skew-x)) skewY(var(--transform-skew-y)) scaleX(var(--transform-scale-x)) scaleY(var(--transform-scale-y));
+    transform: translateX(var(--transform-translate-x))
+      translateY(var(--transform-translate-y)) rotate(var(--transform-rotate))
+      skewX(var(--transform-skew-x)) skewY(var(--transform-skew-y))
+      scaleX(var(--transform-scale-x)) scaleY(var(--transform-scale-y));
   }
 
   .sm\:vec-transform-none {
@@ -19515,23 +19545,23 @@ video {
   }
 
   .sm\:vec-scale-50 {
-    --transform-scale-x: .5;
-    --transform-scale-y: .5;
+    --transform-scale-x: 0.5;
+    --transform-scale-y: 0.5;
   }
 
   .sm\:vec-scale-75 {
-    --transform-scale-x: .75;
-    --transform-scale-y: .75;
+    --transform-scale-x: 0.75;
+    --transform-scale-y: 0.75;
   }
 
   .sm\:vec-scale-90 {
-    --transform-scale-x: .9;
-    --transform-scale-y: .9;
+    --transform-scale-x: 0.9;
+    --transform-scale-y: 0.9;
   }
 
   .sm\:vec-scale-95 {
-    --transform-scale-x: .95;
-    --transform-scale-y: .95;
+    --transform-scale-x: 0.95;
+    --transform-scale-y: 0.95;
   }
 
   .sm\:vec-scale-100 {
@@ -19564,19 +19594,19 @@ video {
   }
 
   .sm\:vec-scale-x-50 {
-    --transform-scale-x: .5;
+    --transform-scale-x: 0.5;
   }
 
   .sm\:vec-scale-x-75 {
-    --transform-scale-x: .75;
+    --transform-scale-x: 0.75;
   }
 
   .sm\:vec-scale-x-90 {
-    --transform-scale-x: .9;
+    --transform-scale-x: 0.9;
   }
 
   .sm\:vec-scale-x-95 {
-    --transform-scale-x: .95;
+    --transform-scale-x: 0.95;
   }
 
   .sm\:vec-scale-x-100 {
@@ -19604,19 +19634,19 @@ video {
   }
 
   .sm\:vec-scale-y-50 {
-    --transform-scale-y: .5;
+    --transform-scale-y: 0.5;
   }
 
   .sm\:vec-scale-y-75 {
-    --transform-scale-y: .75;
+    --transform-scale-y: 0.75;
   }
 
   .sm\:vec-scale-y-90 {
-    --transform-scale-y: .9;
+    --transform-scale-y: 0.9;
   }
 
   .sm\:vec-scale-y-95 {
-    --transform-scale-y: .95;
+    --transform-scale-y: 0.95;
   }
 
   .sm\:vec-scale-y-100 {
@@ -19645,23 +19675,23 @@ video {
   }
 
   .sm\:hover\:vec-scale-50:hover {
-    --transform-scale-x: .5;
-    --transform-scale-y: .5;
+    --transform-scale-x: 0.5;
+    --transform-scale-y: 0.5;
   }
 
   .sm\:hover\:vec-scale-75:hover {
-    --transform-scale-x: .75;
-    --transform-scale-y: .75;
+    --transform-scale-x: 0.75;
+    --transform-scale-y: 0.75;
   }
 
   .sm\:hover\:vec-scale-90:hover {
-    --transform-scale-x: .9;
-    --transform-scale-y: .9;
+    --transform-scale-x: 0.9;
+    --transform-scale-y: 0.9;
   }
 
   .sm\:hover\:vec-scale-95:hover {
-    --transform-scale-x: .95;
-    --transform-scale-y: .95;
+    --transform-scale-x: 0.95;
+    --transform-scale-y: 0.95;
   }
 
   .sm\:hover\:vec-scale-100:hover {
@@ -19694,19 +19724,19 @@ video {
   }
 
   .sm\:hover\:vec-scale-x-50:hover {
-    --transform-scale-x: .5;
+    --transform-scale-x: 0.5;
   }
 
   .sm\:hover\:vec-scale-x-75:hover {
-    --transform-scale-x: .75;
+    --transform-scale-x: 0.75;
   }
 
   .sm\:hover\:vec-scale-x-90:hover {
-    --transform-scale-x: .9;
+    --transform-scale-x: 0.9;
   }
 
   .sm\:hover\:vec-scale-x-95:hover {
-    --transform-scale-x: .95;
+    --transform-scale-x: 0.95;
   }
 
   .sm\:hover\:vec-scale-x-100:hover {
@@ -19734,19 +19764,19 @@ video {
   }
 
   .sm\:hover\:vec-scale-y-50:hover {
-    --transform-scale-y: .5;
+    --transform-scale-y: 0.5;
   }
 
   .sm\:hover\:vec-scale-y-75:hover {
-    --transform-scale-y: .75;
+    --transform-scale-y: 0.75;
   }
 
   .sm\:hover\:vec-scale-y-90:hover {
-    --transform-scale-y: .9;
+    --transform-scale-y: 0.9;
   }
 
   .sm\:hover\:vec-scale-y-95:hover {
-    --transform-scale-y: .95;
+    --transform-scale-y: 0.95;
   }
 
   .sm\:hover\:vec-scale-y-100:hover {
@@ -19775,23 +19805,23 @@ video {
   }
 
   .sm\:focus\:vec-scale-50:focus {
-    --transform-scale-x: .5;
-    --transform-scale-y: .5;
+    --transform-scale-x: 0.5;
+    --transform-scale-y: 0.5;
   }
 
   .sm\:focus\:vec-scale-75:focus {
-    --transform-scale-x: .75;
-    --transform-scale-y: .75;
+    --transform-scale-x: 0.75;
+    --transform-scale-y: 0.75;
   }
 
   .sm\:focus\:vec-scale-90:focus {
-    --transform-scale-x: .9;
-    --transform-scale-y: .9;
+    --transform-scale-x: 0.9;
+    --transform-scale-y: 0.9;
   }
 
   .sm\:focus\:vec-scale-95:focus {
-    --transform-scale-x: .95;
-    --transform-scale-y: .95;
+    --transform-scale-x: 0.95;
+    --transform-scale-y: 0.95;
   }
 
   .sm\:focus\:vec-scale-100:focus {
@@ -19824,19 +19854,19 @@ video {
   }
 
   .sm\:focus\:vec-scale-x-50:focus {
-    --transform-scale-x: .5;
+    --transform-scale-x: 0.5;
   }
 
   .sm\:focus\:vec-scale-x-75:focus {
-    --transform-scale-x: .75;
+    --transform-scale-x: 0.75;
   }
 
   .sm\:focus\:vec-scale-x-90:focus {
-    --transform-scale-x: .9;
+    --transform-scale-x: 0.9;
   }
 
   .sm\:focus\:vec-scale-x-95:focus {
-    --transform-scale-x: .95;
+    --transform-scale-x: 0.95;
   }
 
   .sm\:focus\:vec-scale-x-100:focus {
@@ -19864,19 +19894,19 @@ video {
   }
 
   .sm\:focus\:vec-scale-y-50:focus {
-    --transform-scale-y: .5;
+    --transform-scale-y: 0.5;
   }
 
   .sm\:focus\:vec-scale-y-75:focus {
-    --transform-scale-y: .75;
+    --transform-scale-y: 0.75;
   }
 
   .sm\:focus\:vec-scale-y-90:focus {
-    --transform-scale-y: .9;
+    --transform-scale-y: 0.9;
   }
 
   .sm\:focus\:vec-scale-y-95:focus {
-    --transform-scale-y: .95;
+    --transform-scale-y: 0.95;
   }
 
   .sm\:focus\:vec-scale-y-100:focus {
@@ -21144,7 +21174,8 @@ video {
   }
 
   .sm\:vec-transition {
-    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+    transition-property: background-color, border-color, color, fill, stroke,
+      opacity, box-shadow, transform;
   }
 
   .sm\:vec-transition-colors {
@@ -21261,8 +21292,8 @@ video {
 
   .md\:vec-appearance-none {
     -webkit-appearance: none;
-       -moz-appearance: none;
-            appearance: none;
+    -moz-appearance: none;
+    appearance: none;
   }
 
   .md\:vec-bg-fixed {
@@ -24266,7 +24297,7 @@ video {
   }
 
   .md\:vec-clearfix:after {
-    content: "";
+    content: '';
     display: table;
     clear: both;
   }
@@ -24488,7 +24519,7 @@ video {
   }
 
   .md\:vec-leading-3 {
-    line-height: .75rem;
+    line-height: 0.75rem;
   }
 
   .md\:vec-leading-4 {
@@ -27413,15 +27444,18 @@ video {
   }
 
   .md\:vec-shadow-md {
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+      0 2px 4px -1px rgba(0, 0, 0, 0.06);
   }
 
   .md\:vec-shadow-lg {
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+      0 4px 6px -2px rgba(0, 0, 0, 0.05);
   }
 
   .md\:vec-shadow-xl {
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+      0 10px 10px -5px rgba(0, 0, 0, 0.04);
   }
 
   .md\:vec-shadow-2xl {
@@ -27453,15 +27487,18 @@ video {
   }
 
   .md\:hover\:vec-shadow-md:hover {
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+      0 2px 4px -1px rgba(0, 0, 0, 0.06);
   }
 
   .md\:hover\:vec-shadow-lg:hover {
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+      0 4px 6px -2px rgba(0, 0, 0, 0.05);
   }
 
   .md\:hover\:vec-shadow-xl:hover {
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+      0 10px 10px -5px rgba(0, 0, 0, 0.04);
   }
 
   .md\:hover\:vec-shadow-2xl:hover {
@@ -27493,15 +27530,18 @@ video {
   }
 
   .md\:focus\:vec-shadow-md:focus {
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+      0 2px 4px -1px rgba(0, 0, 0, 0.06);
   }
 
   .md\:focus\:vec-shadow-lg:focus {
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+      0 4px 6px -2px rgba(0, 0, 0, 0.05);
   }
 
   .md\:focus\:vec-shadow-xl:focus {
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+      0 10px 10px -5px rgba(0, 0, 0, 0.04);
   }
 
   .md\:focus\:vec-shadow-2xl:focus {
@@ -28816,22 +28856,22 @@ video {
 
   .md\:vec-select-none {
     -webkit-user-select: none;
-            user-select: none;
+    user-select: none;
   }
 
   .md\:vec-select-text {
     -webkit-user-select: text;
-            user-select: text;
+    user-select: text;
   }
 
   .md\:vec-select-all {
     -webkit-user-select: all;
-            user-select: all;
+    user-select: all;
   }
 
   .md\:vec-select-auto {
     -webkit-user-select: auto;
-            user-select: auto;
+    user-select: auto;
   }
 
   .md\:vec-align-baseline {
@@ -29770,7 +29810,10 @@ video {
     --transform-skew-y: 0;
     --transform-scale-x: 1;
     --transform-scale-y: 1;
-    transform: translateX(var(--transform-translate-x)) translateY(var(--transform-translate-y)) rotate(var(--transform-rotate)) skewX(var(--transform-skew-x)) skewY(var(--transform-skew-y)) scaleX(var(--transform-scale-x)) scaleY(var(--transform-scale-y));
+    transform: translateX(var(--transform-translate-x))
+      translateY(var(--transform-translate-y)) rotate(var(--transform-rotate))
+      skewX(var(--transform-skew-x)) skewY(var(--transform-skew-y))
+      scaleX(var(--transform-scale-x)) scaleY(var(--transform-scale-y));
   }
 
   .md\:vec-transform-none {
@@ -29819,23 +29862,23 @@ video {
   }
 
   .md\:vec-scale-50 {
-    --transform-scale-x: .5;
-    --transform-scale-y: .5;
+    --transform-scale-x: 0.5;
+    --transform-scale-y: 0.5;
   }
 
   .md\:vec-scale-75 {
-    --transform-scale-x: .75;
-    --transform-scale-y: .75;
+    --transform-scale-x: 0.75;
+    --transform-scale-y: 0.75;
   }
 
   .md\:vec-scale-90 {
-    --transform-scale-x: .9;
-    --transform-scale-y: .9;
+    --transform-scale-x: 0.9;
+    --transform-scale-y: 0.9;
   }
 
   .md\:vec-scale-95 {
-    --transform-scale-x: .95;
-    --transform-scale-y: .95;
+    --transform-scale-x: 0.95;
+    --transform-scale-y: 0.95;
   }
 
   .md\:vec-scale-100 {
@@ -29868,19 +29911,19 @@ video {
   }
 
   .md\:vec-scale-x-50 {
-    --transform-scale-x: .5;
+    --transform-scale-x: 0.5;
   }
 
   .md\:vec-scale-x-75 {
-    --transform-scale-x: .75;
+    --transform-scale-x: 0.75;
   }
 
   .md\:vec-scale-x-90 {
-    --transform-scale-x: .9;
+    --transform-scale-x: 0.9;
   }
 
   .md\:vec-scale-x-95 {
-    --transform-scale-x: .95;
+    --transform-scale-x: 0.95;
   }
 
   .md\:vec-scale-x-100 {
@@ -29908,19 +29951,19 @@ video {
   }
 
   .md\:vec-scale-y-50 {
-    --transform-scale-y: .5;
+    --transform-scale-y: 0.5;
   }
 
   .md\:vec-scale-y-75 {
-    --transform-scale-y: .75;
+    --transform-scale-y: 0.75;
   }
 
   .md\:vec-scale-y-90 {
-    --transform-scale-y: .9;
+    --transform-scale-y: 0.9;
   }
 
   .md\:vec-scale-y-95 {
-    --transform-scale-y: .95;
+    --transform-scale-y: 0.95;
   }
 
   .md\:vec-scale-y-100 {
@@ -29949,23 +29992,23 @@ video {
   }
 
   .md\:hover\:vec-scale-50:hover {
-    --transform-scale-x: .5;
-    --transform-scale-y: .5;
+    --transform-scale-x: 0.5;
+    --transform-scale-y: 0.5;
   }
 
   .md\:hover\:vec-scale-75:hover {
-    --transform-scale-x: .75;
-    --transform-scale-y: .75;
+    --transform-scale-x: 0.75;
+    --transform-scale-y: 0.75;
   }
 
   .md\:hover\:vec-scale-90:hover {
-    --transform-scale-x: .9;
-    --transform-scale-y: .9;
+    --transform-scale-x: 0.9;
+    --transform-scale-y: 0.9;
   }
 
   .md\:hover\:vec-scale-95:hover {
-    --transform-scale-x: .95;
-    --transform-scale-y: .95;
+    --transform-scale-x: 0.95;
+    --transform-scale-y: 0.95;
   }
 
   .md\:hover\:vec-scale-100:hover {
@@ -29998,19 +30041,19 @@ video {
   }
 
   .md\:hover\:vec-scale-x-50:hover {
-    --transform-scale-x: .5;
+    --transform-scale-x: 0.5;
   }
 
   .md\:hover\:vec-scale-x-75:hover {
-    --transform-scale-x: .75;
+    --transform-scale-x: 0.75;
   }
 
   .md\:hover\:vec-scale-x-90:hover {
-    --transform-scale-x: .9;
+    --transform-scale-x: 0.9;
   }
 
   .md\:hover\:vec-scale-x-95:hover {
-    --transform-scale-x: .95;
+    --transform-scale-x: 0.95;
   }
 
   .md\:hover\:vec-scale-x-100:hover {
@@ -30038,19 +30081,19 @@ video {
   }
 
   .md\:hover\:vec-scale-y-50:hover {
-    --transform-scale-y: .5;
+    --transform-scale-y: 0.5;
   }
 
   .md\:hover\:vec-scale-y-75:hover {
-    --transform-scale-y: .75;
+    --transform-scale-y: 0.75;
   }
 
   .md\:hover\:vec-scale-y-90:hover {
-    --transform-scale-y: .9;
+    --transform-scale-y: 0.9;
   }
 
   .md\:hover\:vec-scale-y-95:hover {
-    --transform-scale-y: .95;
+    --transform-scale-y: 0.95;
   }
 
   .md\:hover\:vec-scale-y-100:hover {
@@ -30079,23 +30122,23 @@ video {
   }
 
   .md\:focus\:vec-scale-50:focus {
-    --transform-scale-x: .5;
-    --transform-scale-y: .5;
+    --transform-scale-x: 0.5;
+    --transform-scale-y: 0.5;
   }
 
   .md\:focus\:vec-scale-75:focus {
-    --transform-scale-x: .75;
-    --transform-scale-y: .75;
+    --transform-scale-x: 0.75;
+    --transform-scale-y: 0.75;
   }
 
   .md\:focus\:vec-scale-90:focus {
-    --transform-scale-x: .9;
-    --transform-scale-y: .9;
+    --transform-scale-x: 0.9;
+    --transform-scale-y: 0.9;
   }
 
   .md\:focus\:vec-scale-95:focus {
-    --transform-scale-x: .95;
-    --transform-scale-y: .95;
+    --transform-scale-x: 0.95;
+    --transform-scale-y: 0.95;
   }
 
   .md\:focus\:vec-scale-100:focus {
@@ -30128,19 +30171,19 @@ video {
   }
 
   .md\:focus\:vec-scale-x-50:focus {
-    --transform-scale-x: .5;
+    --transform-scale-x: 0.5;
   }
 
   .md\:focus\:vec-scale-x-75:focus {
-    --transform-scale-x: .75;
+    --transform-scale-x: 0.75;
   }
 
   .md\:focus\:vec-scale-x-90:focus {
-    --transform-scale-x: .9;
+    --transform-scale-x: 0.9;
   }
 
   .md\:focus\:vec-scale-x-95:focus {
-    --transform-scale-x: .95;
+    --transform-scale-x: 0.95;
   }
 
   .md\:focus\:vec-scale-x-100:focus {
@@ -30168,19 +30211,19 @@ video {
   }
 
   .md\:focus\:vec-scale-y-50:focus {
-    --transform-scale-y: .5;
+    --transform-scale-y: 0.5;
   }
 
   .md\:focus\:vec-scale-y-75:focus {
-    --transform-scale-y: .75;
+    --transform-scale-y: 0.75;
   }
 
   .md\:focus\:vec-scale-y-90:focus {
-    --transform-scale-y: .9;
+    --transform-scale-y: 0.9;
   }
 
   .md\:focus\:vec-scale-y-95:focus {
-    --transform-scale-y: .95;
+    --transform-scale-y: 0.95;
   }
 
   .md\:focus\:vec-scale-y-100:focus {
@@ -31448,7 +31491,8 @@ video {
   }
 
   .md\:vec-transition {
-    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+    transition-property: background-color, border-color, color, fill, stroke,
+      opacity, box-shadow, transform;
   }
 
   .md\:vec-transition-colors {
@@ -31565,8 +31609,8 @@ video {
 
   .lg\:vec-appearance-none {
     -webkit-appearance: none;
-       -moz-appearance: none;
-            appearance: none;
+    -moz-appearance: none;
+    appearance: none;
   }
 
   .lg\:vec-bg-fixed {
@@ -34570,7 +34614,7 @@ video {
   }
 
   .lg\:vec-clearfix:after {
-    content: "";
+    content: '';
     display: table;
     clear: both;
   }
@@ -34792,7 +34836,7 @@ video {
   }
 
   .lg\:vec-leading-3 {
-    line-height: .75rem;
+    line-height: 0.75rem;
   }
 
   .lg\:vec-leading-4 {
@@ -37717,15 +37761,18 @@ video {
   }
 
   .lg\:vec-shadow-md {
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+      0 2px 4px -1px rgba(0, 0, 0, 0.06);
   }
 
   .lg\:vec-shadow-lg {
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+      0 4px 6px -2px rgba(0, 0, 0, 0.05);
   }
 
   .lg\:vec-shadow-xl {
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+      0 10px 10px -5px rgba(0, 0, 0, 0.04);
   }
 
   .lg\:vec-shadow-2xl {
@@ -37757,15 +37804,18 @@ video {
   }
 
   .lg\:hover\:vec-shadow-md:hover {
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+      0 2px 4px -1px rgba(0, 0, 0, 0.06);
   }
 
   .lg\:hover\:vec-shadow-lg:hover {
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+      0 4px 6px -2px rgba(0, 0, 0, 0.05);
   }
 
   .lg\:hover\:vec-shadow-xl:hover {
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+      0 10px 10px -5px rgba(0, 0, 0, 0.04);
   }
 
   .lg\:hover\:vec-shadow-2xl:hover {
@@ -37797,15 +37847,18 @@ video {
   }
 
   .lg\:focus\:vec-shadow-md:focus {
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+      0 2px 4px -1px rgba(0, 0, 0, 0.06);
   }
 
   .lg\:focus\:vec-shadow-lg:focus {
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+      0 4px 6px -2px rgba(0, 0, 0, 0.05);
   }
 
   .lg\:focus\:vec-shadow-xl:focus {
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+      0 10px 10px -5px rgba(0, 0, 0, 0.04);
   }
 
   .lg\:focus\:vec-shadow-2xl:focus {
@@ -39120,22 +39173,22 @@ video {
 
   .lg\:vec-select-none {
     -webkit-user-select: none;
-            user-select: none;
+    user-select: none;
   }
 
   .lg\:vec-select-text {
     -webkit-user-select: text;
-            user-select: text;
+    user-select: text;
   }
 
   .lg\:vec-select-all {
     -webkit-user-select: all;
-            user-select: all;
+    user-select: all;
   }
 
   .lg\:vec-select-auto {
     -webkit-user-select: auto;
-            user-select: auto;
+    user-select: auto;
   }
 
   .lg\:vec-align-baseline {
@@ -40074,7 +40127,10 @@ video {
     --transform-skew-y: 0;
     --transform-scale-x: 1;
     --transform-scale-y: 1;
-    transform: translateX(var(--transform-translate-x)) translateY(var(--transform-translate-y)) rotate(var(--transform-rotate)) skewX(var(--transform-skew-x)) skewY(var(--transform-skew-y)) scaleX(var(--transform-scale-x)) scaleY(var(--transform-scale-y));
+    transform: translateX(var(--transform-translate-x))
+      translateY(var(--transform-translate-y)) rotate(var(--transform-rotate))
+      skewX(var(--transform-skew-x)) skewY(var(--transform-skew-y))
+      scaleX(var(--transform-scale-x)) scaleY(var(--transform-scale-y));
   }
 
   .lg\:vec-transform-none {
@@ -40123,23 +40179,23 @@ video {
   }
 
   .lg\:vec-scale-50 {
-    --transform-scale-x: .5;
-    --transform-scale-y: .5;
+    --transform-scale-x: 0.5;
+    --transform-scale-y: 0.5;
   }
 
   .lg\:vec-scale-75 {
-    --transform-scale-x: .75;
-    --transform-scale-y: .75;
+    --transform-scale-x: 0.75;
+    --transform-scale-y: 0.75;
   }
 
   .lg\:vec-scale-90 {
-    --transform-scale-x: .9;
-    --transform-scale-y: .9;
+    --transform-scale-x: 0.9;
+    --transform-scale-y: 0.9;
   }
 
   .lg\:vec-scale-95 {
-    --transform-scale-x: .95;
-    --transform-scale-y: .95;
+    --transform-scale-x: 0.95;
+    --transform-scale-y: 0.95;
   }
 
   .lg\:vec-scale-100 {
@@ -40172,19 +40228,19 @@ video {
   }
 
   .lg\:vec-scale-x-50 {
-    --transform-scale-x: .5;
+    --transform-scale-x: 0.5;
   }
 
   .lg\:vec-scale-x-75 {
-    --transform-scale-x: .75;
+    --transform-scale-x: 0.75;
   }
 
   .lg\:vec-scale-x-90 {
-    --transform-scale-x: .9;
+    --transform-scale-x: 0.9;
   }
 
   .lg\:vec-scale-x-95 {
-    --transform-scale-x: .95;
+    --transform-scale-x: 0.95;
   }
 
   .lg\:vec-scale-x-100 {
@@ -40212,19 +40268,19 @@ video {
   }
 
   .lg\:vec-scale-y-50 {
-    --transform-scale-y: .5;
+    --transform-scale-y: 0.5;
   }
 
   .lg\:vec-scale-y-75 {
-    --transform-scale-y: .75;
+    --transform-scale-y: 0.75;
   }
 
   .lg\:vec-scale-y-90 {
-    --transform-scale-y: .9;
+    --transform-scale-y: 0.9;
   }
 
   .lg\:vec-scale-y-95 {
-    --transform-scale-y: .95;
+    --transform-scale-y: 0.95;
   }
 
   .lg\:vec-scale-y-100 {
@@ -40253,23 +40309,23 @@ video {
   }
 
   .lg\:hover\:vec-scale-50:hover {
-    --transform-scale-x: .5;
-    --transform-scale-y: .5;
+    --transform-scale-x: 0.5;
+    --transform-scale-y: 0.5;
   }
 
   .lg\:hover\:vec-scale-75:hover {
-    --transform-scale-x: .75;
-    --transform-scale-y: .75;
+    --transform-scale-x: 0.75;
+    --transform-scale-y: 0.75;
   }
 
   .lg\:hover\:vec-scale-90:hover {
-    --transform-scale-x: .9;
-    --transform-scale-y: .9;
+    --transform-scale-x: 0.9;
+    --transform-scale-y: 0.9;
   }
 
   .lg\:hover\:vec-scale-95:hover {
-    --transform-scale-x: .95;
-    --transform-scale-y: .95;
+    --transform-scale-x: 0.95;
+    --transform-scale-y: 0.95;
   }
 
   .lg\:hover\:vec-scale-100:hover {
@@ -40302,19 +40358,19 @@ video {
   }
 
   .lg\:hover\:vec-scale-x-50:hover {
-    --transform-scale-x: .5;
+    --transform-scale-x: 0.5;
   }
 
   .lg\:hover\:vec-scale-x-75:hover {
-    --transform-scale-x: .75;
+    --transform-scale-x: 0.75;
   }
 
   .lg\:hover\:vec-scale-x-90:hover {
-    --transform-scale-x: .9;
+    --transform-scale-x: 0.9;
   }
 
   .lg\:hover\:vec-scale-x-95:hover {
-    --transform-scale-x: .95;
+    --transform-scale-x: 0.95;
   }
 
   .lg\:hover\:vec-scale-x-100:hover {
@@ -40342,19 +40398,19 @@ video {
   }
 
   .lg\:hover\:vec-scale-y-50:hover {
-    --transform-scale-y: .5;
+    --transform-scale-y: 0.5;
   }
 
   .lg\:hover\:vec-scale-y-75:hover {
-    --transform-scale-y: .75;
+    --transform-scale-y: 0.75;
   }
 
   .lg\:hover\:vec-scale-y-90:hover {
-    --transform-scale-y: .9;
+    --transform-scale-y: 0.9;
   }
 
   .lg\:hover\:vec-scale-y-95:hover {
-    --transform-scale-y: .95;
+    --transform-scale-y: 0.95;
   }
 
   .lg\:hover\:vec-scale-y-100:hover {
@@ -40383,23 +40439,23 @@ video {
   }
 
   .lg\:focus\:vec-scale-50:focus {
-    --transform-scale-x: .5;
-    --transform-scale-y: .5;
+    --transform-scale-x: 0.5;
+    --transform-scale-y: 0.5;
   }
 
   .lg\:focus\:vec-scale-75:focus {
-    --transform-scale-x: .75;
-    --transform-scale-y: .75;
+    --transform-scale-x: 0.75;
+    --transform-scale-y: 0.75;
   }
 
   .lg\:focus\:vec-scale-90:focus {
-    --transform-scale-x: .9;
-    --transform-scale-y: .9;
+    --transform-scale-x: 0.9;
+    --transform-scale-y: 0.9;
   }
 
   .lg\:focus\:vec-scale-95:focus {
-    --transform-scale-x: .95;
-    --transform-scale-y: .95;
+    --transform-scale-x: 0.95;
+    --transform-scale-y: 0.95;
   }
 
   .lg\:focus\:vec-scale-100:focus {
@@ -40432,19 +40488,19 @@ video {
   }
 
   .lg\:focus\:vec-scale-x-50:focus {
-    --transform-scale-x: .5;
+    --transform-scale-x: 0.5;
   }
 
   .lg\:focus\:vec-scale-x-75:focus {
-    --transform-scale-x: .75;
+    --transform-scale-x: 0.75;
   }
 
   .lg\:focus\:vec-scale-x-90:focus {
-    --transform-scale-x: .9;
+    --transform-scale-x: 0.9;
   }
 
   .lg\:focus\:vec-scale-x-95:focus {
-    --transform-scale-x: .95;
+    --transform-scale-x: 0.95;
   }
 
   .lg\:focus\:vec-scale-x-100:focus {
@@ -40472,19 +40528,19 @@ video {
   }
 
   .lg\:focus\:vec-scale-y-50:focus {
-    --transform-scale-y: .5;
+    --transform-scale-y: 0.5;
   }
 
   .lg\:focus\:vec-scale-y-75:focus {
-    --transform-scale-y: .75;
+    --transform-scale-y: 0.75;
   }
 
   .lg\:focus\:vec-scale-y-90:focus {
-    --transform-scale-y: .9;
+    --transform-scale-y: 0.9;
   }
 
   .lg\:focus\:vec-scale-y-95:focus {
-    --transform-scale-y: .95;
+    --transform-scale-y: 0.95;
   }
 
   .lg\:focus\:vec-scale-y-100:focus {
@@ -41752,7 +41808,8 @@ video {
   }
 
   .lg\:vec-transition {
-    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+    transition-property: background-color, border-color, color, fill, stroke,
+      opacity, box-shadow, transform;
   }
 
   .lg\:vec-transition-colors {
@@ -41869,8 +41926,8 @@ video {
 
   .xl\:vec-appearance-none {
     -webkit-appearance: none;
-       -moz-appearance: none;
-            appearance: none;
+    -moz-appearance: none;
+    appearance: none;
   }
 
   .xl\:vec-bg-fixed {
@@ -44874,7 +44931,7 @@ video {
   }
 
   .xl\:vec-clearfix:after {
-    content: "";
+    content: '';
     display: table;
     clear: both;
   }
@@ -45096,7 +45153,7 @@ video {
   }
 
   .xl\:vec-leading-3 {
-    line-height: .75rem;
+    line-height: 0.75rem;
   }
 
   .xl\:vec-leading-4 {
@@ -48021,15 +48078,18 @@ video {
   }
 
   .xl\:vec-shadow-md {
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+      0 2px 4px -1px rgba(0, 0, 0, 0.06);
   }
 
   .xl\:vec-shadow-lg {
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+      0 4px 6px -2px rgba(0, 0, 0, 0.05);
   }
 
   .xl\:vec-shadow-xl {
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+      0 10px 10px -5px rgba(0, 0, 0, 0.04);
   }
 
   .xl\:vec-shadow-2xl {
@@ -48061,15 +48121,18 @@ video {
   }
 
   .xl\:hover\:vec-shadow-md:hover {
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+      0 2px 4px -1px rgba(0, 0, 0, 0.06);
   }
 
   .xl\:hover\:vec-shadow-lg:hover {
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+      0 4px 6px -2px rgba(0, 0, 0, 0.05);
   }
 
   .xl\:hover\:vec-shadow-xl:hover {
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+      0 10px 10px -5px rgba(0, 0, 0, 0.04);
   }
 
   .xl\:hover\:vec-shadow-2xl:hover {
@@ -48101,15 +48164,18 @@ video {
   }
 
   .xl\:focus\:vec-shadow-md:focus {
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+      0 2px 4px -1px rgba(0, 0, 0, 0.06);
   }
 
   .xl\:focus\:vec-shadow-lg:focus {
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+      0 4px 6px -2px rgba(0, 0, 0, 0.05);
   }
 
   .xl\:focus\:vec-shadow-xl:focus {
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+      0 10px 10px -5px rgba(0, 0, 0, 0.04);
   }
 
   .xl\:focus\:vec-shadow-2xl:focus {
@@ -49424,22 +49490,22 @@ video {
 
   .xl\:vec-select-none {
     -webkit-user-select: none;
-            user-select: none;
+    user-select: none;
   }
 
   .xl\:vec-select-text {
     -webkit-user-select: text;
-            user-select: text;
+    user-select: text;
   }
 
   .xl\:vec-select-all {
     -webkit-user-select: all;
-            user-select: all;
+    user-select: all;
   }
 
   .xl\:vec-select-auto {
     -webkit-user-select: auto;
-            user-select: auto;
+    user-select: auto;
   }
 
   .xl\:vec-align-baseline {
@@ -50378,7 +50444,10 @@ video {
     --transform-skew-y: 0;
     --transform-scale-x: 1;
     --transform-scale-y: 1;
-    transform: translateX(var(--transform-translate-x)) translateY(var(--transform-translate-y)) rotate(var(--transform-rotate)) skewX(var(--transform-skew-x)) skewY(var(--transform-skew-y)) scaleX(var(--transform-scale-x)) scaleY(var(--transform-scale-y));
+    transform: translateX(var(--transform-translate-x))
+      translateY(var(--transform-translate-y)) rotate(var(--transform-rotate))
+      skewX(var(--transform-skew-x)) skewY(var(--transform-skew-y))
+      scaleX(var(--transform-scale-x)) scaleY(var(--transform-scale-y));
   }
 
   .xl\:vec-transform-none {
@@ -50427,23 +50496,23 @@ video {
   }
 
   .xl\:vec-scale-50 {
-    --transform-scale-x: .5;
-    --transform-scale-y: .5;
+    --transform-scale-x: 0.5;
+    --transform-scale-y: 0.5;
   }
 
   .xl\:vec-scale-75 {
-    --transform-scale-x: .75;
-    --transform-scale-y: .75;
+    --transform-scale-x: 0.75;
+    --transform-scale-y: 0.75;
   }
 
   .xl\:vec-scale-90 {
-    --transform-scale-x: .9;
-    --transform-scale-y: .9;
+    --transform-scale-x: 0.9;
+    --transform-scale-y: 0.9;
   }
 
   .xl\:vec-scale-95 {
-    --transform-scale-x: .95;
-    --transform-scale-y: .95;
+    --transform-scale-x: 0.95;
+    --transform-scale-y: 0.95;
   }
 
   .xl\:vec-scale-100 {
@@ -50476,19 +50545,19 @@ video {
   }
 
   .xl\:vec-scale-x-50 {
-    --transform-scale-x: .5;
+    --transform-scale-x: 0.5;
   }
 
   .xl\:vec-scale-x-75 {
-    --transform-scale-x: .75;
+    --transform-scale-x: 0.75;
   }
 
   .xl\:vec-scale-x-90 {
-    --transform-scale-x: .9;
+    --transform-scale-x: 0.9;
   }
 
   .xl\:vec-scale-x-95 {
-    --transform-scale-x: .95;
+    --transform-scale-x: 0.95;
   }
 
   .xl\:vec-scale-x-100 {
@@ -50516,19 +50585,19 @@ video {
   }
 
   .xl\:vec-scale-y-50 {
-    --transform-scale-y: .5;
+    --transform-scale-y: 0.5;
   }
 
   .xl\:vec-scale-y-75 {
-    --transform-scale-y: .75;
+    --transform-scale-y: 0.75;
   }
 
   .xl\:vec-scale-y-90 {
-    --transform-scale-y: .9;
+    --transform-scale-y: 0.9;
   }
 
   .xl\:vec-scale-y-95 {
-    --transform-scale-y: .95;
+    --transform-scale-y: 0.95;
   }
 
   .xl\:vec-scale-y-100 {
@@ -50557,23 +50626,23 @@ video {
   }
 
   .xl\:hover\:vec-scale-50:hover {
-    --transform-scale-x: .5;
-    --transform-scale-y: .5;
+    --transform-scale-x: 0.5;
+    --transform-scale-y: 0.5;
   }
 
   .xl\:hover\:vec-scale-75:hover {
-    --transform-scale-x: .75;
-    --transform-scale-y: .75;
+    --transform-scale-x: 0.75;
+    --transform-scale-y: 0.75;
   }
 
   .xl\:hover\:vec-scale-90:hover {
-    --transform-scale-x: .9;
-    --transform-scale-y: .9;
+    --transform-scale-x: 0.9;
+    --transform-scale-y: 0.9;
   }
 
   .xl\:hover\:vec-scale-95:hover {
-    --transform-scale-x: .95;
-    --transform-scale-y: .95;
+    --transform-scale-x: 0.95;
+    --transform-scale-y: 0.95;
   }
 
   .xl\:hover\:vec-scale-100:hover {
@@ -50606,19 +50675,19 @@ video {
   }
 
   .xl\:hover\:vec-scale-x-50:hover {
-    --transform-scale-x: .5;
+    --transform-scale-x: 0.5;
   }
 
   .xl\:hover\:vec-scale-x-75:hover {
-    --transform-scale-x: .75;
+    --transform-scale-x: 0.75;
   }
 
   .xl\:hover\:vec-scale-x-90:hover {
-    --transform-scale-x: .9;
+    --transform-scale-x: 0.9;
   }
 
   .xl\:hover\:vec-scale-x-95:hover {
-    --transform-scale-x: .95;
+    --transform-scale-x: 0.95;
   }
 
   .xl\:hover\:vec-scale-x-100:hover {
@@ -50646,19 +50715,19 @@ video {
   }
 
   .xl\:hover\:vec-scale-y-50:hover {
-    --transform-scale-y: .5;
+    --transform-scale-y: 0.5;
   }
 
   .xl\:hover\:vec-scale-y-75:hover {
-    --transform-scale-y: .75;
+    --transform-scale-y: 0.75;
   }
 
   .xl\:hover\:vec-scale-y-90:hover {
-    --transform-scale-y: .9;
+    --transform-scale-y: 0.9;
   }
 
   .xl\:hover\:vec-scale-y-95:hover {
-    --transform-scale-y: .95;
+    --transform-scale-y: 0.95;
   }
 
   .xl\:hover\:vec-scale-y-100:hover {
@@ -50687,23 +50756,23 @@ video {
   }
 
   .xl\:focus\:vec-scale-50:focus {
-    --transform-scale-x: .5;
-    --transform-scale-y: .5;
+    --transform-scale-x: 0.5;
+    --transform-scale-y: 0.5;
   }
 
   .xl\:focus\:vec-scale-75:focus {
-    --transform-scale-x: .75;
-    --transform-scale-y: .75;
+    --transform-scale-x: 0.75;
+    --transform-scale-y: 0.75;
   }
 
   .xl\:focus\:vec-scale-90:focus {
-    --transform-scale-x: .9;
-    --transform-scale-y: .9;
+    --transform-scale-x: 0.9;
+    --transform-scale-y: 0.9;
   }
 
   .xl\:focus\:vec-scale-95:focus {
-    --transform-scale-x: .95;
-    --transform-scale-y: .95;
+    --transform-scale-x: 0.95;
+    --transform-scale-y: 0.95;
   }
 
   .xl\:focus\:vec-scale-100:focus {
@@ -50736,19 +50805,19 @@ video {
   }
 
   .xl\:focus\:vec-scale-x-50:focus {
-    --transform-scale-x: .5;
+    --transform-scale-x: 0.5;
   }
 
   .xl\:focus\:vec-scale-x-75:focus {
-    --transform-scale-x: .75;
+    --transform-scale-x: 0.75;
   }
 
   .xl\:focus\:vec-scale-x-90:focus {
-    --transform-scale-x: .9;
+    --transform-scale-x: 0.9;
   }
 
   .xl\:focus\:vec-scale-x-95:focus {
-    --transform-scale-x: .95;
+    --transform-scale-x: 0.95;
   }
 
   .xl\:focus\:vec-scale-x-100:focus {
@@ -50776,19 +50845,19 @@ video {
   }
 
   .xl\:focus\:vec-scale-y-50:focus {
-    --transform-scale-y: .5;
+    --transform-scale-y: 0.5;
   }
 
   .xl\:focus\:vec-scale-y-75:focus {
-    --transform-scale-y: .75;
+    --transform-scale-y: 0.75;
   }
 
   .xl\:focus\:vec-scale-y-90:focus {
-    --transform-scale-y: .9;
+    --transform-scale-y: 0.9;
   }
 
   .xl\:focus\:vec-scale-y-95:focus {
-    --transform-scale-y: .95;
+    --transform-scale-y: 0.95;
   }
 
   .xl\:focus\:vec-scale-y-100:focus {
@@ -52056,7 +52125,8 @@ video {
   }
 
   .xl\:vec-transition {
-    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+    transition-property: background-color, border-color, color, fill, stroke,
+      opacity, box-shadow, transform;
   }
 
   .xl\:vec-transition-colors {
