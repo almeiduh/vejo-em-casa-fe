@@ -1,6 +1,9 @@
+/* eslint-disable jsx-a11y/media-has-caption */
 import React from 'react';
 
-import background from 'assets/images/landingPageHightlight@2x.png';
+import fallBackVideoImg from 'assets/images/Vejo_em_Casa_header_fallback.jpg';
+import videoMp4 from 'assets/videos/Vejo_em_Casa_video_header.mp4';
+import videoWebm from 'assets/videos/Vejo_em_Casa_video_header.webm';
 // import fbSvg from 'svg/veja_web_icons-11.svg';
 import { ReactComponent as FbLogo } from 'svg/veja_web_icons-11.svg';
 import { ReactComponent as InstagramLogo } from 'svg/veja_web_icons-14.svg';
@@ -12,8 +15,18 @@ const Highlight = () => {
   return (
     <>
       <div className={styles.container}>
-        <div className={styles.overlay} />
-        <img alt="" className={styles.backgroundImg} src={background} />
+        <video autoPlay loop className={styles.backgroundImg}>
+          <source
+            src={videoMp4}
+            type='video/mp4; codecs="avc1.42E0 1E, mp4a.40.2"'
+          />
+          <source src={videoWebm} type='video/webm; codecs="vp8, vorbis"' />
+          <img
+            alt="video"
+            src={fallBackVideoImg}
+            title="Your browser does not support the <video> tag"
+          />
+        </video>
         <div className={styles.rightBtns}>
           <div className={styles.poeParBtn}>
             <PlaneIcon height="26px" width="40px" />
