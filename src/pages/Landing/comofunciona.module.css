@@ -1,0 +1,91 @@
+.bgContainer {
+    position: relative;
+    height: 683px;
+
+    background: #F5F5F5 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.titles {
+    position: relative;
+    top: 80px;
+    width: 100%;
+    margin: 0;
+
+    text-align: center;
+    letter-spacing: 0;
+    opacity: 1;
+}
+
+.title {
+    position: relative;
+    top: 0;
+
+    color: #EB2907;
+    font-size: 44px;
+}
+
+.subtitle {
+    position: relative;
+
+    color: #000000;
+    font-size: 24px;
+}
+
+.smContainer {
+    position: relative;
+    top: 110px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.smContainer > * {
+    position: absolute;
+
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 0;
+    color: #1A1A1A;
+    opacity: 1;
+}
+
+.icons {
+    top: 100px;
+    height: 182px;
+}
+
+.step1 {
+    top: 285px;
+    left: 130px;
+    width: 248px;
+    height: 83px;
+}
+
+.step2 {
+    top: 30px;
+    left: 300px;
+    width: 350px;
+    height: 84px;
+}
+
+.step3 {
+    top: 285px;
+    left: 565px;
+    width: 314px;
+    height: 124px;
+}
+
+.step4 {
+    top: 60px;
+    left: 780px;
+    width: 350px;
+    height: 51px;
+}
+
+.step5 {
+    top: 285px;
+    left: 1015px;
+    width: 342px;
+    height: 131px;
+}
