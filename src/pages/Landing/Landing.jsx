@@ -1,7 +1,15 @@
 import React from 'react';
 
+import Header from 'pages/Landing/Header';
+import Highlight from 'pages/Landing/Hightlight';
+
 const LandingPage = () => {
-  return <div>landing Page</div>;
+  return (
+    <>
+      <Header />
+      <Highlight />
+    </>
+  );
 };
 
 export default LandingPage;

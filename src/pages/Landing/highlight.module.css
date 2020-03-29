@@ -1,0 +1,70 @@
+.container {
+  height: 576px;
+  position: relative;
+}
+
+.backgroundImg {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  background: #eb2907e6 0% 0% no-repeat padding-box;
+  mix-blend-mode: multiply;
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.rightBtns {
+  position: absolute;
+  bottom: 20px;
+  right: 71px;
+  text-align: -webkit-right;
+}
+.poeParBtn {
+  width: 276px;
+  height: 85px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border-radius: 42px;
+  opacity: 1;
+  letter-spacing: 0;
+  color: #eb2907;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  margin-left: 40px;
+}
+.social {
+  margin-top: 40px;
+  display: flex;
+  justify-content: flex-end;
+}
+.fb,
+.instagram {
+  display: flex;
+  color: white;
+  border-radius: 10px;
+  border: 1px solid white;
+  padding: 15px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.fb {
+  margin-right: 40px;
+}
+.icon {
+  height: 22px;
+  fill: white;
+  margin-right: 10px;
+}
+
+.icon path {
+  fill: white !important;
+}

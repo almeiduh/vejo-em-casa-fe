@@ -1,0 +1,20 @@
+.header {
+  height: 80px;
+  display: flex;
+  padding: 10px 46px 10px 42px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 50px;
+  width: 148px;
+}
+
+.menus {
+  display: flex;
+}
+.menu {
+  margin-right: 58px;
+  cursor: pointer;
+}
