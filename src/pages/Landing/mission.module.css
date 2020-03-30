@@ -41,7 +41,8 @@
   flex-direction: column;
   justify-content: center;
 
-  width: 660px;
+  width: 100%;
+  max-width: 660px;
   margin: 80px auto;
 }
 
@@ -56,8 +57,10 @@
   font-weight: bold;
 }
 
-.moreInfo {
+.moreInfo,
+.subTitle {
   text-align: center;
+  font-size: 24px;
 }
 
 .paragraph {
