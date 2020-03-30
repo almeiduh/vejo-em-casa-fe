@@ -5,7 +5,8 @@ import Header from 'pages/Landing/Header';
 import Highlight from 'pages/Landing/Hightlight';
 import Newsletter from 'pages/Landing/Newsletter';
 
-import ComoFunciona from './ComoFunciona';
+import HowItWorks from 'components/LandingPageComponents/HowItWorks/HowItWorks';
+
 import Contacts from './Contacts';
 import Mission from './Mission';
 
@@ -14,11 +15,11 @@ const LandingPage = () => {
     <>
       <Header />
       <Highlight />
-      <ComoFunciona />
+      <HowItWorks />
       <Mission />
+      <Contacts />
       <Newsletter />
       <Footer />
-      <Contacts />
     </>
   );
 };
