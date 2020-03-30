@@ -28,7 +28,11 @@ const Contacts = () => {
                 </div>
                 <div>
                   <p className={styles.description}>Cria eventos connosco</p>
-                  <p className={styles.email}>curadoria@vejoemcasa.pt</p>
+                  <p className={styles.email}>
+                    <a href="mailto:curadoria@vejoemcasa.pt">
+                      curadoria@vejoemcasa.pt
+                    </a>
+                  </p>
                 </div>
               </div>
               <div className={styles.info}>
@@ -39,7 +43,11 @@ const Contacts = () => {
                   <p className={styles.description}>
                     Torna-te nosso parceiro ou patrocinador
                   </p>
-                  <p className={styles.email}>parcerias@vejoemcasa.pt</p>
+                  <p className={styles.email}>
+                    <a href="mailto:parcerias@vejoemcasa.pt">
+                      parcerias@vejoemcasa.pt
+                    </a>
+                  </p>
                 </div>
               </div>
               <div className={styles.info}>
@@ -48,7 +56,11 @@ const Contacts = () => {
                 </div>
                 <div>
                   <p className={styles.description}>Questões de Marketing</p>
-                  <p className={styles.email}>marketing@vejoemcasa.pt</p>
+                  <p className={styles.email}>
+                    <a href="mailto:marketing@vejoemcasa.pt">
+                      marketing@vejoemcasa.pt
+                    </a>
+                  </p>
                 </div>
               </div>
             </div>
@@ -63,7 +75,9 @@ const Contacts = () => {
                   <p className={styles.description}>
                     Obtém mais informações sobre o projeto
                   </p>
-                  <p className={styles.email}>hello@vejoemcasa.pt</p>
+                  <p className={styles.email}>
+                    <a href="mailto:hello@vejoemcasa.pt">hello@vejoemcasa.pt</a>
+                  </p>
                 </div>
               </div>
               <div className={styles.info}>
@@ -72,7 +86,9 @@ const Contacts = () => {
                 </div>
                 <div>
                   <p className={styles.description}>Questões de Legais</p>
-                  <p className={styles.email}>legal@vejoemcasa.pt</p>
+                  <p className={styles.email}>
+                    <a href="mailto:legal@vejoemcasa.pt">legal@vejoemcasa.pt</a>
+                  </p>
                 </div>
               </div>
               <div className={styles.info}>

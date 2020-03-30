@@ -28,6 +28,7 @@
 
 .subtitle {
     position: relative;
+    margin-top: -14px;
 
     color: #000000;
     font-weight: 300;
@@ -37,7 +38,8 @@
 .smContainer {
     position: relative;
     top: 110px;
-    width: 100%;
+    margin: auto;
+    width: 1200px;
     display: flex;
     justify-content: center;
 }
@@ -55,41 +57,40 @@
 
 .icons {
     top: 100px;
-    /* height: 182px; */
-    width: 77%;
+    max-width: 1030px;
 }
 
 .step1 {
-    top: 290px;
-    left: 8%;
+    top: 285px;
+    left: 27px;
     width: 248px;
     height: 83px;
 }
 
 .step2 {
     top: 30px;
-    left: 20%;
+    left: 200px;
     width: 350px;
     height: 84px;
 }
 
 .step3 {
-    top: 290px;
-    left: 39%;
+    top: 285px;
+    left: 445px;
     width: 314px;
     height: 124px;
 }
 
 .step4 {
     top: 60px;
-    left: 54%;
+    left: 650px;
     width: 350px;
     height: 51px;
 }
 
 .step5 {
-    top: 290px;
-    right: 2%;
+    top: 285px;
+    right: -26px;
     width: 370px;
     height: 131px;
 }
