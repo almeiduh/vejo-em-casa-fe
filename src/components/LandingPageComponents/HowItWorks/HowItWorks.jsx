@@ -2,11 +2,11 @@ import React from 'react';
 
 import icons from 'svg/veja_web_pag_landingpage_Icons-16.svg';
 
-import styles from './comofunciona.module.css';
+import styles from './howitworks.module.css';
 
-const ComoFunciona = () => {
+const HowItWorks = () => {
   return (
-    <div className={styles.bgContainer} id="comofunciona">
+    <div className={styles.bgContainer}>
       <div className={styles.titles}>
         <h3 className={styles.title}>Como é que funciona?</h3>
         <p className={styles.subtitle}>
@@ -35,4 +35,4 @@ const ComoFunciona = () => {
   );
 };
 
-export default ComoFunciona;
+export default HowItWorks;
