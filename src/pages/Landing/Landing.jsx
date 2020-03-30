@@ -6,6 +6,7 @@ import Highlight from 'pages/Landing/Hightlight';
 import Newsletter from 'pages/Landing/Newsletter';
 
 import ComoFunciona from './ComoFunciona';
+import Contacts from './Contacts';
 import Mission from './Mission';
 
 const LandingPage = () => {
@@ -17,6 +18,7 @@ const LandingPage = () => {
       <Mission />
       <Newsletter />
       <Footer />
+      <Contacts />
     </>
   );
 };
