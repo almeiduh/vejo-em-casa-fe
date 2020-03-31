@@ -30,8 +30,8 @@ const Newsletter = () => {
           <div className={styles.title}>Fica a par de tudo!</div>
           <div className={styles.subtitle}>Subscreve a nossa newsletter</div>
         </div>
-        <div className="vec-flex vec-justify-between vec-mt-10">
-          <div className="vec-w-1/2 vec-mr-2">
+        <div className={`${styles.formContainer} vec-flex  vec-mt-10`}>
+          <div className={`${styles.textContainer} vec-w-1/2 vec-mr-2`}>
             <div className={styles.text}>
               Esta é a melhor altura para descobrir coisas novas, aprender e
               evoluir. É também a melhor altura para ajudar.
@@ -41,7 +41,7 @@ const Newsletter = () => {
               teu email para ficarmos mais próximos!
             </div>
           </div>
-          <div className="vec-w-1/2">
+          <div className={`{styles.subscribeFields vec-w-1/2} `}>
             <div className={styles.subscribe}>
               <input
                 placeholder="Insere o teu email..."
