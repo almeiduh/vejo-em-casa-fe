@@ -1,5 +1,6 @@
 import React from 'react';
 
+import AboutUs from 'pages/Landing/AboutUs';
 import Footer from 'pages/Landing/Footer';
 import Header from 'pages/Landing/Header';
 import Highlight from 'pages/Landing/Hightlight';
@@ -15,6 +16,7 @@ const LandingPage = () => {
     <>
       <Header />
       <Highlight />
+      <AboutUs />
       <HowItWorks />
       <Mission />
       <Contacts />
