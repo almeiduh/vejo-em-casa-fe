@@ -15,7 +15,7 @@ import icon14 from 'svg/veja_web_pag_landingpage_Icons-14.svg';
 
 const AboutUs = () => {
     return (
-        <div className={styles.bgContainer}>
+        <div className={styles.bgContainer} id='sobrenos'>
 
             <div className={styles.mdContainer}>
                 <div className={styles.titles}>

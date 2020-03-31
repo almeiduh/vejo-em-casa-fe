@@ -12,16 +12,20 @@ const Header = () => {
         <img alt="" className={styles.logo} src={logo} />
       </div>
       <div className={styles.menus}>
-        <div className={styles.menu}>Sobre nós</div>
+        <div className={styles.menu}>
+          <a href="#sobrenos">Sobre nós</a>
+          </div>
         <div className={styles.menu}>
           <a href="#comofunciona">Como funciona</a>
         </div>
         <div className={styles.menu}>
           <a href="#missao">Missão</a>
         </div>
-        <div className={styles.menu}>Contactos</div>
         <div className={styles.menu}>
-          <a href="#parceiros">Parcerias</a>
+          <a href="#contactos">Contactos</a>
+        </div>
+        <div className={styles.menu}>
+          <a href="#parcerias">Parcerias</a>
         </div>
         <div className={styles.menu}>
           <PlaneIcon height="18px" width="28px" />

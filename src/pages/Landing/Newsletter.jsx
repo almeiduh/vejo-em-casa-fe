@@ -75,7 +75,7 @@ const Newsletter = () => {
           </div>
         </div>
       </div>
-      <div className={styles.focusbc} id="parceiros">
+      <div className={styles.focusbc} id="parcerias">
         <div className={styles.iconContainer}>
           <Focus height="auto" width="auto" />
         </div>

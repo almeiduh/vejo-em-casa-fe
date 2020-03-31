@@ -11,7 +11,7 @@ import styles from './contacts.module.css';
 
 const Contacts = () => {
   return (
-    <div className={styles.wrapper}>
+    <div className={styles.wrapper} id='contactos'>
       <div className={styles.contentContainer}>
         <div className={styles.titleBlock}>
           <div className={styles.title}>Contactos</div>
