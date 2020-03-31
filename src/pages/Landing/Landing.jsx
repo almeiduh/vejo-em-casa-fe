@@ -5,9 +5,7 @@ import Footer from 'pages/Landing/Footer';
 import Header from 'pages/Landing/Header';
 import Highlight from 'pages/Landing/Hightlight';
 import Newsletter from 'pages/Landing/Newsletter';
-
-import HowItWorks from 'components/LandingPageComponents/HowItWorks/HowItWorks';
-
+import HowItWorks from 'pages/Landing/HowItWorks';
 import Contacts from './Contacts';
 import Mission from './Mission';
 

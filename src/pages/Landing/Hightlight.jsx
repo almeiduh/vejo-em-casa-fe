@@ -17,7 +17,7 @@ const Highlight = () => {
     <>
       <div className={styles.container}>
         <div className={styles.logo}>
-          <VejaEmCasa height="auto" width="auto" />
+          <VejaEmCasa height="400px" width="auto" />
         </div>
         <video autoPlay loop className={styles.backgroundImg}>
           <source
