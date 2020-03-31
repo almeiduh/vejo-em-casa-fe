@@ -7,34 +7,22 @@ import styles from './header.module.css';
 
 const Header = () => {
   return (
-    <div className={styles.header}>
-      <div>
-        <img alt="" className={styles.logo} src={logo} />
-      </div>
-      <div className={styles.menus}>
-        <div className={styles.menu}>
-          <a href="#sobrenos">Sobre nós</a>
-          </div>
-        <div className={styles.menu}>
-          <a href="#comofunciona">Como funciona</a>
-        </div>
-        <div className={styles.menu}>
-          <a href="#missao">Missão</a>
-        </div>
-        <div className={styles.menu}>
-          <a href="#contactos">Contactos</a>
-        </div>
-        <div className={styles.menu}>
-          <a href="#parcerias">Parcerias</a>
-        </div>
-        <div className={styles.menu}>
+    <header className={styles.header}>
+      <a href="" className={styles.logo}><img alt="" width="148px" height="50px" src={logo} /></a>
+      <input className={styles.menuBtn} type="checkbox" id="menuBtn" />
+      <label className={styles.menuIcon} htmlFor="menuBtn"><span className={styles.navicon}></span></label>
+      <ul className={styles.menu}>
+        <li><a href="#work">Sobre nós</a></li>
+        <li><a href="#about">Como funciona</a></li>
+        <li><a href="#careers">Missão</a></li>
+        <li><a href="#contact">Contactos</a></li>
+        <li><a href="#contact">Parcerias</a></li>
+        <li>
           <PlaneIcon height="18px" width="28px" />
-          <span className="vec-ml-3">
-            <a href="#poeteapar">Põe-te a par</a>
-          </span>
-        </div>
-      </div>
-    </div>
+          <a href="#poeteapar">Põe-te a par</a>
+        </li>
+      </ul>
+    </header>
   );
 };
 
