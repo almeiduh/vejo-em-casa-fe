@@ -22,13 +22,16 @@ const AboutUs = () => {
                     <h3 className={styles.title}>Sobre nós</h3>
                     <p className={styles.subtitle}>Sabe mais sobre o nosso projecto.</p>
                 </div>
-                <p className={styles.text}>
-                    Vejo em Casa é uma plataforma sem fins lucrativos de conteúdos diversificados em formato live streaming, de cariz solidário e desenvolvida por uma equipa de voluntários. Este projeto integra o movimento tech4COVID19, cujo propósito é a criação de soluções que atenuem as consequências desta pandemia.
-                    <br /><br />
-                    Sentimos que este é o momento ideal para dar a volta por cima, para conhecer talentos e conteúdos do melhor que há, para partilhar e, acima de tudo, para ajudar. Por isso, todos os nossos eventos oferecem a oportunidade ao público de apoiar diretamente não só os criadores, mas também o movimento Tech4COVID19 e as suas iniciativas.
-                </p>
-                <div className={styles.powered}>Powered by:</div>
-                <img src={logo} alt='Logotipo do #tech4COVID19' className={styles.logo} />
+
+                    <p className={styles.text}>
+                        Vejo em Casa é uma plataforma sem fins lucrativos de conteúdos diversificados em formato live streaming, de cariz solidário e desenvolvida por uma equipa de voluntários. Este projeto integra o movimento tech4COVID19, cujo propósito é a criação de soluções que atenuem as consequências desta pandemia.
+                        <br /><br />
+                        Sentimos que este é o momento ideal para dar a volta por cima, para conhecer talentos e conteúdos do melhor que há, para partilhar e, acima de tudo, para ajudar. Por isso, todos os nossos eventos oferecem a oportunidade ao público de apoiar diretamente não só os criadores, mas também o movimento Tech4COVID19 e as suas iniciativas.
+                    </p>
+                    <br />
+                    <div className={styles.powered}>Powered by:</div>
+                    <img src={logo} alt='Logotipo do #tech4COVID19' className={styles.logo} />
+
             </div>
 
             <div className={styles.smContainer}>
