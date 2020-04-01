@@ -26,11 +26,13 @@ body {
   background-color: #fff;
 }
 
-.header li a {
+.header li a,.header li button {
   display: block;
   padding: 20px 20px;
   text-decoration: none;
   cursor: pointer;
+  outline: none;
+  border: none;
 }
 
 .header .logo {
@@ -115,7 +117,7 @@ body {
   top: 0;
 }
 
-.menu li:last-child a {
+.menu li:last-child a, .menu li:last-child button {
   color: #eb2907;
   display: inline-block;
   padding: 0;
@@ -135,7 +137,7 @@ body {
 
 @media (min-width: 48em) {
   body {    
-    padding-top: 85px;
+    padding-top: 86px;
   }
 
   .header {
@@ -150,7 +152,7 @@ body {
     float: left;
   }
   
-  .header li a {
+  .header li a, .header li button {
     padding: 20px 30px;
   }
 
