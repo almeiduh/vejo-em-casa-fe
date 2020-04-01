@@ -17,7 +17,7 @@ const Highlight = () => {
     <>
       <div className={styles.container}>
         <img alt="Logo" className={styles.logo} src={vejaEmCasa} />
-        <video autoPlay loop className={styles.backgroundImg}>
+        <video autoPlay loop muted className={styles.backgroundImg}>
           <source
             src={videoMp4}
             type='video/mp4; codecs="avc1.42E0 1E, mp4a.40.2"'
