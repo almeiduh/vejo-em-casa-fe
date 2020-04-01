@@ -125,6 +125,7 @@
     padding: 30px;
     width: 500px;
     position: inherit;
+    margin-top: 0;
   }
 
   .powered {
