@@ -24,7 +24,7 @@ const Newsletter = () => {
     <>
       <div className={styles.container} id="poeteapar">
         <div className={styles.mailIcon}>
-          <Mail />
+          <Mail height="190px" width="150px" />
         </div>
         <div>
           <div className={styles.title}>Fica a par de tudo!</div>
