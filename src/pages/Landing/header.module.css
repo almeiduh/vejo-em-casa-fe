@@ -1,6 +1,10 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
-  padding-top: 85px;
+  padding-top: 73px;
 }
 
 /* header */
@@ -26,6 +30,7 @@ body {
   display: block;
   padding: 20px 20px;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .header .logo {
@@ -129,6 +134,14 @@ body {
 /* 48em = 768px */
 
 @media (min-width: 48em) {
+  body {    
+    padding-top: 85px;
+  }
+
+  .header {
+    position: fixed;
+  }
+
   .header ul {
     padding: 10px;
   }
