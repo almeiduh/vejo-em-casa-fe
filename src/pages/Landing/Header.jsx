@@ -7,26 +7,29 @@ import styles from './header.module.css';
 
 const Header = () => {
   const goToSection = section => {
+    const divSection = document.getElementById(section) || {};
+    const btnMenu = document.getElementById('menuBtn') || {};
+
     // This is because the header overlaps the sections
-    window.scrollTo(0, document.getElementById(section).offsetTop - 80);
+    if (divSection.offsetTop) window.scrollTo(0, divSection.offsetTop - 80);
     // To close after click
-    document.getElementById('menuBtn').checked = false;
+    if (btnMenu) btnMenu.checked = false;
   };
 
   return (
     <header className={styles.header}>
-      <a href="" className={styles.logo}><img alt="" width="148px" height="50px" src={logo} /></a>
+      <a href="/" className={styles.logo}><img alt="" width="148px" height="50px" src={logo} /></a>
       <input className={styles.menuBtn} type="checkbox" id="menuBtn" />
       <label className={styles.menuIcon} htmlFor="menuBtn"><span className={styles.navicon}></span></label>
       <ul className={styles.menu}>
-        <li><a onClick={() => goToSection('sobrenos')}>Sobre nós</a></li>
-        <li><a onClick={() => goToSection('comofunciona')}>Como funciona</a></li>
-        <li><a onClick={() => goToSection('missao')}>Missão</a></li>
-        <li><a onClick={() => goToSection('contactos')}>Contactos</a></li>
-        <li><a onClick={() => goToSection('parcerias')}>Parcerias</a></li>
+        <li><button onClick={() => goToSection('sobrenos')}>Sobre nós</button></li>
+        <li><button onClick={() => goToSection('comofunciona')}>Como funciona</button></li>
+        <li><button onClick={() => goToSection('missao')}>Missão</button></li>
+        <li><button onClick={() => goToSection('contactos')}>Contactos</button></li>
+        <li><button onClick={() => goToSection('parcerias')}>Parcerias</button></li>
         <li>
           <PlaneIcon height="18px" width="28px" />
-          <a onClick={() => goToSection('poeteapar')}>Põe-te a par</a>
+          <button onClick={() => goToSection('poeteapar')}>Põe-te a par</button>
         </li>
       </ul>
     </header>

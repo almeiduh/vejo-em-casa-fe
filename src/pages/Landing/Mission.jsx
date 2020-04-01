@@ -12,7 +12,7 @@ const Mission = () => {
         </div>
         <div className={styles.titleBlock}>
           <div className={styles.title}>Missão</div>
-          <div className={styles.subTitle}>Apoia à a cultura nacional.</div>
+          <div className={styles.subTitle}>Apoia a cultura nacional.</div>
         </div>
         <div className={styles.text}>
           Por causa da pandemia COVID-19, muitos criadores vivem atualmente uma
