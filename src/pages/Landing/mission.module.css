@@ -43,8 +43,16 @@
 
   width: 100%;
   max-width: 660px;
-  margin: 80px auto;
+
   padding-top: 50px;
+}
+
+@media (min-width: 1400px) {
+  .contentContainer {
+    text-align: left;
+    font-size: 23px;
+    margin: 80px auto;
+  }
 }
 
 .titleBlock {
