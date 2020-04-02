@@ -1,12 +1,13 @@
 import React from 'react';
 
-import icons from 'svg/veja_web_pag_landingpage_Icons-16.svg';
+// import icons from 'svg/veja_web_pag_landingpage_Icons-16.svg';
 
 import criadores from '../../svg/howItWorks/criadores.svg';
 import calendario from '../../svg/howItWorks/calendario.svg';
 import notificacoes from '../../svg/howItWorks/notificacoes.svg';
 import stream from '../../svg/howItWorks/stream.svg';
 import apoiar from '../../svg/howItWorks/apoiar.svg';
+import icons from 'svg/icons-and-text.svg';
 
 import styles from './howitworks.module.css';
 
@@ -22,20 +23,6 @@ const HowItWorks = () => {
 
       <div className={styles.smContainer}>
         <img alt="" className={styles.icons} src={icons} />
-
-        <p className={styles.step1}>Os criadores associam-se à Vejo Em Casa</p>
-        <p className={styles.step2}>
-          Definimos o calendário dos eventos sugeridos pelos criadores
-        </p>
-        <p className={styles.step3}>
-          Tens uma agenda sempre atualizada onde podes subscrever os eventos que
-          mais te interessam
-        </p>
-        <p className={styles.step4}>Show Time!</p>
-        <p className={styles.step5}>
-          Achaste o conteúdo incrível? Apoia o criador através de MBWAY,
-          PAYPAL...
-        </p>
       </div>
 
       <div className={styles.smContainerMobile}>
