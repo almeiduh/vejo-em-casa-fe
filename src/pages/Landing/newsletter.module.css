@@ -134,15 +134,18 @@
   cursor: not-allowed;
 }
 
-.focusbc {
-  height: 245px;
+.patterns {
+  align-items: center;
   background: #f7f8fa 0% 0% no-repeat padding-box;
   display: flex;
-  align-items: center;
+  height: 245px;
   justify-content: center;
+  padding-right: 20px;
 }
+
 .iconContainer {
-  width: 255px;
+  flex: 1;
+  max-width: 255px;
 }
 
 .checkboxLabel {
