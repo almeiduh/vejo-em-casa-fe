@@ -1,13 +1,15 @@
 .bgContainer {
-  height: 634px;
+  height: auto;
   padding-top: 10px;
+  display: flex;
+  flex-direction: row;
 }
 
 .mdContainer {
   position: relative;
   left: 217px;
-  width: 650px;
-  margin-top: 50px;
+  width: 550px;
+  margin: 50px 0;
 }
 
 .titles {
@@ -66,8 +68,8 @@
 
 .smContainer {
   position: relative;
-  top: -470px;
-  left: 870px;
+  top: 103px;
+  left: 280px;
   width: 518px;
 }
 
@@ -105,37 +107,50 @@
   line-height: 10.7px;
 }
 
-@media (min-width: 1500px) {
+@media (min-width: 1620px) {
   .mdContainer {
-    width: 800px;
-    left: 340px;
+    width: 700px;
+    left: 20%;
   }
 
   .smContainer {
-    left: 1190px;
+    left: 22%;
   }
 }
 
 @media (max-width: 1400px) {
-  .bgContainer {
-    height: 730px;
-  }
-
   .mdContainer {
-    padding: 30px;
-    width: 500px;
+    padding: 42px 60px;
+    width: 550px;
     position: inherit;
     margin-top: 0;
+    margin-left: 135px;
   }
 
+  .smContainer {
+    top: 100px;
+    left: 0px;
+    width: 540px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .mdContainer {
+    padding: 42px 60px;
+    width: 550px;
+    position: inherit;
+    margin-top: 0;
+    margin-left: 60px;
+  }
+  
   .powered {
     margin-top: 0;
   }
 
   .smContainer {
-    top: -560px;
-    left: 650px;
     width: 540px;
+    top: 156px;
+    left: -24px;
   }
 
   .icons > div {
@@ -151,18 +166,20 @@
 
 @media (max-width: 1000px) {
   .smContainer {
-    top: 20px;
-    left: 150px;
+    top: 50px;
+    left: 14px;
+  }
+
+  .mdContainer {
+    padding: 42px 12px;
   }
 
   .bgContainer {
-    display: block;
     justify-content: center;
-    height: auto;
   }
 
   .icons {
-    width: 470px;
+    width: 370px;
   }
 
   .icons > div {
@@ -182,14 +199,14 @@
   }
 }
 
-@media (min-width: 550px) {
+@media (max-width: 550px) {
+  .mdContainer {
+    max-width: 90%;
+    margin-left: 33px;
+  }
 }
 
 @media (max-width: 440px) {
-  .bgContainer {
-    height: auto;
-  }
-
   .powered {
     margin-top: 15px;
   }
@@ -200,8 +217,8 @@
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    max-width: 80%;
     left: 0;
-    margin-left: 33px;
+    padding: 5px;
   }
+
 }
