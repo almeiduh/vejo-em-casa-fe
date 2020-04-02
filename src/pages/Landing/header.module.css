@@ -133,9 +133,7 @@ body {
   padding: 20px 10px 20px 20px;
 }
 
-/* 48em = 768px */
-
-@media (min-width: 48em) {
+@media (min-width: 1045px) {
   body {    
     padding-top: 86px;
   }

@@ -2,8 +2,10 @@ import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 
 import { subscribeUserAsync, getMessage } from 'state/landingpage/landingSlice';
-import { ReactComponent as Focus } from 'svg/veja_web_pag_landingpage_Icons-26.svg';
 import { ReactComponent as Mail } from 'svg/veja_web_pag_landingpage-02.svg';
+
+import Focus from '../../svg/veja_web_pag_landingpage_Icons-26.svg';
+import Swonkei from '../../svg/swonkie-logo.svg';
 
 import styles from './newsletter.module.css';
 
@@ -75,9 +77,12 @@ const Newsletter = () => {
           </div>
         </div>
       </div>
-      <div className={styles.focusbc} id="parcerias">
+      <div className={styles.patterns} id="parcerias">
         <div className={styles.iconContainer}>
-          <Focus height="auto" width="auto" />
+          <img alt="" src={Focus} />
+        </div>
+        <div className={styles.iconContainer}>
+          <img alt="" src={Swonkei} />
         </div>
       </div>
     </>
