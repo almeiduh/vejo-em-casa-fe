@@ -34,103 +34,62 @@
 }
 
 .smContainer {
-    /* position: relative;
-    top: 110px; */
     margin: 100px 0 50px 0;;
     width: 100%;
     display: flex;
     justify-content: center;
 }
-/* 
-.smContainer > * {
-    position: absolute;
-    text-align: center;
-    font-size: 20px;
-    font-weight: 500;
-    letter-spacing: 0;
-    color: #1A1A1A;
-    opacity: 1;
-} */
 
 .smContainerMobile {
     display: none;
 }
 
 .icons {
-    /* top: 100px;
-    max-width: 1030px; */
     max-width: 92%;
 }
-/* 
-.step1 {
-    top: 285px;
-    left: 27px;
-    width: 248px;
-    height: 83px;
-}
-
-.step2 {
-    top: 30px;
-    left: 200px;
-    width: 350px;
-    height: 84px;
-}
-
-.step3 {
-    top: 285px;
-    left: 445px;
-    width: 314px;
-    height: 124px;
-}
-
-.step4 {
-    top: 60px;
-    left: 650px;
-    width: 350px;
-    height: 51px;
-}
-
-.step5 {
-    top: 285px;
-    right: -26px;
-    width: 370px;
-    height: 131px;
-} */
 
 @media only screen and (max-width: 768px) {
-    /* For mobile phones: */
-    .bgContainer {
-      height: auto;
-      padding-bottom: 25px;
-    }
+  /* For mobile phones: */
+  .bgContainer {
+    height: auto;
+    padding-bottom: 25px;
+  }
 
-    .smContainer {
-        display: none;
-    }
+  .smContainer {
+    display: none;
+  }
 
-    .smContainerMobile {
-        display: block;
-        padding: 80px 40px 0 40px;
-    }
+  .smContainerMobile {
+    display: inline-block;
+    padding: 80px 40px 0 40px;
+  }
 
-    .subtitle {
-      padding: 25px;
-    }
+  .subtitle {
+    padding: 25px;
+  }
 
-    .wrapper {
-      display: flex;
-      align-items: center;
-      padding-bottom: 15px;
-    }
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+  }
 
-    .icon {
-      width: 100%;
-      max-width: 30px;
-    }
+  .icon {
+    flex: 0 0 100px;
+  }
 
-    .text {
-      font-weight: 500;
-      font-size: 16px;
-      padding-left: 15px;
-    }
+  .icon img {
+    max-width: 75px;
+  }
+
+  .row {
+    display: flex;
+    padding-bottom: 15px;
+  }
+
+  .text {
+    align-self: center;
+    display: flex;
+    font-weight: 500;
+    font-size: 16px;
+  }
 }
