@@ -1,7 +1,7 @@
 import React from 'react';
 
 import logo from 'svg/veja_web_logo-02.svg';
-import { ReactComponent as PlaneIcon } from 'svg/veja_web_pag_landingpage_Icons-03.svg';
+import planeIcon from 'svg/veja_web_pag_landingpage_Icons-03.svg';
 
 import styles from './header.module.css';
 
@@ -28,7 +28,7 @@ const Header = () => {
         <li><button onClick={() => goToSection('contactos')}>Contactos</button></li>
         <li><button onClick={() => goToSection('parcerias')}>Parcerias</button></li>
         <li>
-          <PlaneIcon height="18px" width="28px" />
+          <img alt="" className={styles.planeIcon} src={planeIcon} />
           <button onClick={() => goToSection('poeteapar')}>Põe-te a par</button>
         </li>
       </ul>
