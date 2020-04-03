@@ -120,7 +120,7 @@ body {
 .menu li:last-child a, .menu li:last-child button {
   color: #eb2907;
   display: inline-block;
-  padding: 0;
+  padding: 0 0 0 5px;
 }
 
 .menu li:last-child svg {
@@ -131,6 +131,11 @@ body {
 
 .menu li:last-child {
   padding: 20px 10px 20px 20px;
+}
+
+.planeIcon {
+  display: inline-block;
+  width: 28px;
 }
 
 @media (min-width: 1045px) {
