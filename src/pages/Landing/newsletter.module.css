@@ -187,6 +187,16 @@
   color: #666666;
 }
 
+.checkboxContainer {
+  margin-top: 40px;
+}
+
+@media (min-width: 700px) {
+  .checkboxContainer {
+    margin-top: 10px;
+  }
+}
+
 .checkboxContainer input,
 .checkboxLabel {
   margin-top: 8px;
@@ -204,7 +214,8 @@
   font-size: 11px;
   letter-spacing: 0;
   color: #666666;
-  margin-top: 5px;
+  margin-top: 10px;
+  color: red;
 }
 .mailIcon {
   position: block;
