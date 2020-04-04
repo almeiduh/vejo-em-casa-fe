@@ -4,9 +4,8 @@ import { useSelector, useDispatch } from 'react-redux';
 import { subscribeUserAsync, getMessage } from 'state/landingpage/landingSlice';
 import { ReactComponent as Mail } from 'svg/veja_web_pag_landingpage-02.svg';
 
-import Focus from '../../svg/veja_web_pag_landingpage_Icons-26.svg';
 import Swonkei from '../../svg/swonkie-logo.svg';
-
+import Focus from '../../svg/veja_web_pag_landingpage_Icons-26.svg';
 import styles from './newsletter.module.css';
 
 const Newsletter = () => {
@@ -77,12 +76,15 @@ const Newsletter = () => {
           </div>
         </div>
       </div>
-      <div className={styles.patterns} id="parcerias">
-        <div className={styles.iconContainer}>
-          <img alt="" src={Focus} />
-        </div>
-        <div className={styles.iconContainer}>
-          <img alt="" src={Swonkei} />
+      <div className={styles.partnersContainer} id="parcerias">
+        <div className={styles.partnersTitle}>Parceiros</div>
+        <div className={styles.patterns}>
+          <div className={styles.iconContainer}>
+            <img alt="" src={Focus} />
+          </div>
+          <div className={styles.iconContainer}>
+            <img alt="" src={Swonkei} />
+          </div>
         </div>
       </div>
     </>
