@@ -8,7 +8,7 @@ import videoWebm from 'assets/videos/Vejo_em_Casa_video_header.webm';
 import { ReactComponent as FbLogo } from 'svg/veja_web_icons-11.svg';
 import { ReactComponent as InstagramLogo } from 'svg/veja_web_icons-14.svg';
 import vejaEmCasa from 'svg/veja_web_pag_landingpage_Icons-02.svg';
-import { ReactComponent as PlaneIcon } from 'svg/veja_web_pag_landingpage_Icons-03.svg';
+import planeIcon from 'svg/veja_web_pag_landingpage_Icons-03.svg';
 
 import styles from './highlight.module.css';
 
@@ -33,7 +33,7 @@ const Highlight = () => {
           <div className={styles.socialButtons}>
             <div className={styles.ctaBlock}>
               <a className={styles.button} href="#poeteapar">
-                <PlaneIcon height="26px" width="40px" />
+                <img alt="" className={styles.planeIcon} src={planeIcon} />
                 <span className="vec-ml-4">Põe-te a par</span>
               </a>
             </div>
@@ -53,6 +53,22 @@ const Highlight = () => {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+        <div className={styles.buttonsContainerMobile}>
+          <div className={styles.ctaBlock}>
+            <a className={styles.button} href="#poeteapar">
+              <img alt="" className={styles.planeIcon} src={planeIcon} />
+              <span>Põe-te a par</span>
+            </a>
+          </div>
+          <div className="vec-flex">
+            <a href="https://www.facebook.com/vejoemcasa/">
+              <FbLogo className={styles.icon} />
+            </a>
+            <a href="https://www.instagram.com/vejo.em.casa/">
+              <InstagramLogo className={styles.icon} />
+            </a>
           </div>
         </div>
       </div>
