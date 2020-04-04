@@ -1,20 +1,23 @@
 import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 
+import styles from 'pages/Landing/newsletter.module.css';
 import { subscribeUserAsync, getMessage } from 'state/landingpage/landingSlice';
+import Swonkei from 'svg/swonkie-logo.svg';
+import Focus from 'svg/veja_web_pag_landingpage_Icons-26.svg';
 import { ReactComponent as Mail } from 'svg/veja_web_pag_landingpage-02.svg';
-
-import Swonkei from '../../svg/swonkie-logo.svg';
-import Focus from '../../svg/veja_web_pag_landingpage_Icons-26.svg';
-import styles from './newsletter.module.css';
 
 const Newsletter = () => {
   const dispatch = useDispatch();
   const message = useSelector(getMessage);
 
   const [email, setEmail] = useState('');
-  const [isSubscribeEnabled, setIsSubscribeEnabled] = useState(true);
+  const [isSubscribeEnabled, setIsSubscribeEnabled] = useState(false);
   const handleClick = (event) => setIsSubscribeEnabled(event.target.checked);
+
+  const emailIsValid = (email) => {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+  };
 
   const handleSubscribeClick = () => {
     if (email.length === 0) return;
@@ -51,16 +54,18 @@ const Newsletter = () => {
                 onChange={({ target: { value } }) => setEmail(value)}
               />
               <button
-                disabled={!isSubscribeEnabled}
+                disabled={
+                  !isSubscribeEnabled ||
+                  email.length === 0 ||
+                  !emailIsValid(email)
+                }
                 type="button"
                 onClick={handleSubscribeClick}
               >
                 Subscrever
               </button>
             </div>
-            {message.length > 0 && (
-              <div className={styles.message}>{message}</div>
-            )}
+
             <div
               className={`vec-flex vec-items-center ${styles.checkboxContainer}`}
             >
@@ -73,6 +78,9 @@ const Newsletter = () => {
                 LI E ACEITO A POLÍTICA DE PRIVACIDADE.
               </div>
             </div>
+            {message.length > 0 && (
+              <div className={styles.message}>{message}</div>
+            )}
           </div>
         </div>
       </div>
