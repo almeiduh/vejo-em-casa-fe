@@ -10,7 +10,7 @@ const Footer = () => {
       <div>
         Copyright © 2020,{' '}
         <span>
-          <a href="https://vejoemcasa.pt/"> Vejo em Casa.</a>
+          <a href="/"> Vejo em Casa.</a>
         </span>{' '}
         Projecto desenvolvido no âmbito do
         <span>
@@ -19,7 +19,7 @@ const Footer = () => {
       </div>
       <div>
         <span>
-          <a href="https://vejoemcasa.pt/politicaprivacidade/">
+          <a href="/politica-privacidade" target="_blank" rel="noopener noreferrer">
             Politica de Privacidade
           </a>
         </span>

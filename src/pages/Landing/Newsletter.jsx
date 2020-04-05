@@ -5,6 +5,7 @@ import styles from 'pages/Landing/newsletter.module.css';
 import { subscribeUserAsync, getMessage } from 'state/landingpage/landingSlice';
 import Swonkei from 'svg/swonkie-logo.svg';
 import Focus from 'svg/veja_web_pag_landingpage_Icons-26.svg';
+import EuPago from 'svg/euPago-logo.svg';
 import { ReactComponent as Mail } from 'svg/veja_web_pag_landingpage-02.svg';
 
 const Newsletter = () => {
@@ -88,10 +89,13 @@ const Newsletter = () => {
         <div className={styles.partnersTitle}>Parceiros</div>
         <div className={styles.patterns}>
           <div className={styles.iconContainer}>
-            <img alt="" src={Focus} />
+            <a href="https://www.eupago.pt/?lang=pt" target="_blank" rel="noopener noreferrer"><img alt="" src={EuPago} /></a>
           </div>
           <div className={styles.iconContainer}>
-            <img alt="" src={Swonkei} />
+            <a href="https://www.focus-bc.com/" target="_blank" rel="noopener noreferrer"><img alt="" src={Focus} /></a>
+          </div>
+          <div className={styles.iconContainer}>
+            <a href="https://swonkie.com/pt" target="_blank" rel="noopener noreferrer"><img alt="" src={Swonkei} /></a>
           </div>
         </div>
       </div>
