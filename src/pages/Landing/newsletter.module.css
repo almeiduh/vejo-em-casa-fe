@@ -136,14 +136,15 @@
 
 .partnersContainer {
   background: #f7f8fa 0% 0% no-repeat padding-box;
-  height: 245px;
-
+  min-height: 350px;
   padding-top: 30px;
   padding-bottom: 40px;
   box-sizing: content-box;
 }
+
 @media (min-width: 700px) {
   .partnersContainer {
+    min-height: 245px;
     padding-right: 20px;
   }
 }
@@ -154,6 +155,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-bottom: 40px;
 }
 
 .patterns {
