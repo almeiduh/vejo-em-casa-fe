@@ -118,6 +118,12 @@
   }
 }
 
+@media (min-width: 1400px) {
+  .bgContainer {
+    height: 640px;
+  }
+}
+
 @media (max-width: 1400px) {
   .mdContainer {
     padding: 42px 60px;
@@ -190,6 +196,12 @@
 
   .powered {
     margin-top: 0;
+  }
+}
+
+@media (min-width: 750px) and (max-width: 1000px) {
+  .bgContainer {
+    height: 780px;
   }
 }
 

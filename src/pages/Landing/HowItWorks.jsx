@@ -14,9 +14,6 @@ const HowItWorks = () => {
     <div className={styles.bgContainer} id='comofunciona'>
       <div className={styles.titles}>
         <h3 className={styles.title}>Como é que funciona?</h3>
-        <p className={styles.subtitle}>
-          Assim pretendemos que seja o projecto.
-        </p>
       </div>
 
       <div className={styles.smContainer}>

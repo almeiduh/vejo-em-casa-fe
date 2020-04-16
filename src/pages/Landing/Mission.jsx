@@ -11,23 +11,17 @@ const Mission = () => {
           <img alt="Mission target" src={target} />
         </div>
         <div className={styles.titleBlock}>
-          <div className={styles.title}>Missão</div>
-          <div className={styles.subTitle}>Apoia a cultura nacional.</div>
+          <div className={styles.title}>A Nossa Missão</div>
         </div>
         <div className={styles.text}>
-          Por causa da pandemia COVID-19, muitos criadores vivem atualmente uma
-          situação de precariedade imprevista.
           <p className={styles.paragraph}>
-            A Vejo em Casa surge com a missão de conectar criadores e público,
-            dando acesso a conteúdo de qualidade e apoiando estes profissionais.
+            Queremos apoiar o sector da Cultura através do reforço de conteúdos online que conectem artistas e público, oferecendo conteúdos de qualidade que sirvam de plataforma de apoio a estes profissionais.
           </p>
           <p className={styles.paragraph}>
-            Estamos todos no mesmo barco se podemos dar mais sentido à viagem,
-            porque não fazê-lo? Faz parte deste movimento solidário de apoio à
-            cultura nacional!
+            Faz parte deste movimento solidário de apoio à Cultura nacional. 
+            Estamos todos no mesmo barco, porque não dar mais sentido à viagem?
           </p>
         </div>
-        <p className={styles.moreInfo}>Sabe mais sobre esta missão:</p>
       </div>
     </div>
   );
