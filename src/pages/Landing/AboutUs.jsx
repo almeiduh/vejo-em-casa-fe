@@ -20,13 +20,13 @@ const AboutUs = () => {
             <div className={styles.mdContainer}>
                 <div className={styles.titles}>
                     <h3 className={styles.title}>Sobre nós</h3>
-                    <p className={styles.subtitle}>Sabe mais sobre o nosso projecto.</p>
                 </div>
 
                     <p className={styles.text}>
-                        Vejo em Casa é uma plataforma sem fins lucrativos de conteúdos diversificados em formato live streaming, de cariz solidário e desenvolvida por uma equipa de voluntários. Este projeto integra o movimento tech4COVID19, cujo propósito é a criação de soluções que atenuem as consequências desta pandemia.
-                        <br /><br />
-                        Sentimos que este é o momento ideal para dar a volta por cima, para conhecer talentos e conteúdos do melhor que há, para partilhar e, acima de tudo, para ajudar. Por isso, todos os nossos eventos oferecem a oportunidade ao público de apoiar diretamente não só os criadores, mas também o movimento Tech4COVID19 e as suas iniciativas.
+                        Vejo Em Casa é uma plataforma de conteúdos diversificados em formato live streaming que está associada ao movimento tech4COVID19. 
+                        Este projeto é feito por uma equipa de voluntários e tem cariz solidário sem fins lucrativos. 
+                        O nosso propósito é a criação de soluções que atenuem as consequências que esta pandemia está a ter no sector da Cultura numa altura em que a procura por conteúdo é elevada devido ao isolamento social que todos atravessamos.
+                        Descobre como funciona o nosso projecto.
                     </p>
                     <br />
                     <div className={styles.powered}>Powered by:</div>

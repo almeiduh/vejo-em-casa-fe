@@ -5,7 +5,8 @@ import styles from 'pages/Landing/newsletter.module.css';
 import { subscribeUserAsync, getMessage } from 'state/landingpage/landingSlice';
 import Swonkei from 'svg/swonkie-logo.svg';
 import Focus from 'svg/veja_web_pag_landingpage_Icons-26.svg';
-import EuPago from 'svg/euPago-logo.svg';
+import EuPago from 'svg/eupago.svg';
+import EGoi from 'svg/logo_e-goi.svg';
 import { ReactComponent as Mail } from 'svg/veja_web_pag_landingpage-02.svg';
 
 const Newsletter = () => {
@@ -88,14 +89,17 @@ const Newsletter = () => {
       <div className={styles.partnersContainer} id="parcerias">
         <div className={styles.partnersTitle}>Parceiros</div>
         <div className={styles.patterns}>
-          <div className={styles.iconContainer}>
-            <a href="https://www.eupago.pt/?lang=pt" target="_blank" rel="noopener noreferrer"><img alt="" src={EuPago} /></a>
+        <div className={styles.iconContainer}>
+            <a href="https://swonkie.com/pt" target="_blank" rel="noopener noreferrer"><img alt="logotipo do parceiro Swonkei" src={Swonkei} /></a>
           </div>
           <div className={styles.iconContainer}>
-            <a href="https://www.focus-bc.com/" target="_blank" rel="noopener noreferrer"><img alt="" src={Focus} /></a>
+            <a href="https://www.focus-bc.com/" target="_blank" rel="noopener noreferrer"><img alt="logotipo do parceiro Focus" src={Focus} /></a>
           </div>
           <div className={styles.iconContainer}>
-            <a href="https://swonkie.com/pt" target="_blank" rel="noopener noreferrer"><img alt="" src={Swonkei} /></a>
+            <a href="https://www.e-goi.com/pt" target="_blank" rel="noopener noreferrer"><img alt="logotipo do parceiro E-Goi" src={EGoi} /></a>
+          </div>
+          <div className={styles.iconContainer}>
+            <a href="https://www.eupago.pt/?lang=pt" target="_blank" rel="noopener noreferrer"><img alt="logotipo do parceiro Eu Pago" src={EuPago} /></a>
           </div>
         </div>
       </div>

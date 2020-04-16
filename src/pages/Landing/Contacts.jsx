@@ -15,9 +15,6 @@ const Contacts = () => {
       <div className={styles.contentContainer}>
         <div className={styles.titleBlock}>
           <div className={styles.title}>Contactos</div>
-          <div className={styles.subTitle}>
-            Fala connosco, somos todos ouvidos.
-          </div>
         </div>
         <div className={styles.columnsContainer}>
           <div className={styles.leftColumn}>
