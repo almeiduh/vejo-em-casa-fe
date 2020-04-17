@@ -184,10 +184,6 @@
     justify-content: center;
   }
 
-  .icons {
-    width: 370px;
-  }
-
   .icons > div {
     width: 115px;
     height: 115px;
@@ -197,6 +193,13 @@
   .powered {
     margin-top: 0;
   }
+}
+
+@media (max-width: 1000px) and (min-width: 840px) {
+  .icons {
+    width: 370px;
+  }
+
 }
 
 @media (min-width: 750px) and (max-width: 1000px) {
